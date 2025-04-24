@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BCB20A74-C104-410E-AC50-1347F933214D}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)..\build\PropertySheets\LekinPropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)..\build\PropertySheets\LekinPropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28307.799</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>version.lib;$(OutDir)\AFLib_D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>version.lib;$(OutDir)\AFLib_R.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+    <PostBuildEvent>
+      <Message>Updating Control Sum</Message>
+      <Command>"$(OutDir)Summer.exe" "$(OutDir)$(TargetName).exe"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Basic.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ControlSum.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="AppAsm1.cpp" />
+    <ClCompile Include="AppAsm2.cpp" />
+    <ClCompile Include="AppAsm3.cpp" />
+    <ClCompile Include="BtnStyle.cpp" />
+    <ClCompile Include="Check.cpp" />
+    <ClCompile Include="CmbMch.cpp" />
+    <ClCompile Include="CmbWkc.cpp" />
+    <ClCompile Include="DataUnits.cpp" />
+    <ClCompile Include="Dlg3Button.cpp" />
+    <ClCompile Include="DlgA.cpp" />
+    <ClCompile Include="DlgAbout.cpp" />
+    <ClCompile Include="DlgAddJob.cpp" />
+    <ClCompile Include="DlgAddMch.cpp" />
+    <ClCompile Include="DlgAddOper.cpp" />
+    <ClCompile Include="DlgAddWkc.cpp" />
+    <ClCompile Include="DlgConfirm.cpp" />
+    <ClCompile Include="DlgFlowRoute.cpp" />
+    <ClCompile Include="DlgInit.cpp" />
+    <ClCompile Include="DlgInvalidate.cpp" />
+    <ClCompile Include="DlgJob.cpp" />
+    <ClCompile Include="DlgLoadRoute.cpp" />
+    <ClCompile Include="DlgLoadRS.cpp" />
+    <ClCompile Include="DlgLoadSetup.cpp" />
+    <ClCompile Include="DlgManual.cpp" />
+    <ClCompile Include="DlgMenu.cpp" />
+    <ClCompile Include="DlgObj1.cpp" />
+    <ClCompile Include="DlgObj2.cpp" />
+    <ClCompile Include="DlgOppy.cpp" />
+    <ClCompile Include="DlgOptions.cpp" />
+    <ClCompile Include="DlgParameter.cpp" />
+    <ClCompile Include="DlgPerform.cpp" />
+    <ClCompile Include="DlgPlugin.cpp" />
+    <ClCompile Include="DlgPluginMan.cpp" />
+    <ClCompile Include="DlgPrintGantt.cpp" />
+    <ClCompile Include="DlgPrintMan.cpp" />
+    <ClCompile Include="DlgRoute.cpp" />
+    <ClCompile Include="DlgRunAlg.cpp" />
+    <ClCompile Include="DlgRunComp.cpp" />
+    <ClCompile Include="DlgRunCon.cpp" />
+    <ClCompile Include="DlgRunning.cpp" />
+    <ClCompile Include="DlgRunWin.cpp" />
+    <ClCompile Include="DlgSetup.cpp" />
+    <ClCompile Include="DlgStyle.cpp" />
+    <ClCompile Include="DlgTitle.cpp" />
+    <ClCompile Include="DlgWorkspace.cpp" />
+    <ClCompile Include="DocGantt.cpp" />
+    <ClCompile Include="DocJob.cpp" />
+    <ClCompile Include="DocLog.cpp" />
+    <ClCompile Include="DocMch.cpp" />
+    <ClCompile Include="DocObj.cpp" />
+    <ClCompile Include="DocSeq.cpp" />
+    <ClCompile Include="DocSmart.cpp" />
+    <ClCompile Include="DocTmpAlg.cpp" />
+    <ClCompile Include="DocTmpSmart.cpp" />
+    <ClCompile Include="Draws.cpp" />
+    <ClCompile Include="FrmMain.cpp" />
+    <ClCompile Include="FrmSmart.cpp" />
+    <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="ID.cpp" />
+    <ClCompile Include="Job.cpp" />
+    <ClCompile Include="LstLoadRoute.cpp" />
+    <ClCompile Include="LstSeq.cpp" />
+    <ClCompile Include="LstWkc.cpp" />
+    <ClCompile Include="Machine.cpp" />
+    <ClCompile Include="MarginGantt.cpp" />
+    <ClCompile Include="Operation.cpp" />
+    <ClCompile Include="Plugin.cpp" />
+    <ClCompile Include="RelStat.cpp" />
+    <ClCompile Include="Route.cpp" />
+    <ClCompile Include="Schedule.cpp" />
+    <ClCompile Include="Sequence.cpp" />
+    <ClCompile Include="Setup.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TokenSet.cpp" />
+    <ClCompile Include="TreePlug.cpp" />
+    <ClCompile Include="ViewGantt.cpp" />
+    <ClCompile Include="ViewJob.cpp" />
+    <ClCompile Include="ViewLog.cpp" />
+    <ClCompile Include="ViewMch.cpp" />
+    <ClCompile Include="ViewObj.cpp" />
+    <ClCompile Include="ViewSeq.cpp" />
+    <ClCompile Include="ViewSmart.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+    <ClCompile Include="Workcenter.cpp" />
+    <ClCompile Include="Workspace.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Basic.h" />
+    <ClInclude Include="..\ControlSum.h" />
+    <ClInclude Include="AppAsm.h" />
+    <ClInclude Include="BtnStyle.h" />
+    <ClInclude Include="CmbMch.h" />
+    <ClInclude Include="CmbWkc.h" />
+    <ClInclude Include="DataUnits.h" />
+    <ClInclude Include="Dlg3Button.h" />
+    <ClInclude Include="DlgA.h" />
+    <ClInclude Include="DlgAbout.h" />
+    <ClInclude Include="DlgAddJob.h" />
+    <ClInclude Include="DlgAddMch.h" />
+    <ClInclude Include="DlgAddOper.h" />
+    <ClInclude Include="DlgAddWkc.h" />
+    <ClInclude Include="DlgConfirm.h" />
+    <ClInclude Include="DlgFlowRoute.h" />
+    <ClInclude Include="DlgInit.h" />
+    <ClInclude Include="DlgInvalidate.h" />
+    <ClInclude Include="DlgJob.h" />
+    <ClInclude Include="DlgLoadRoute.h" />
+    <ClInclude Include="DlgLoadRS.h" />
+    <ClInclude Include="DlgLoadSetup.h" />
+    <ClInclude Include="DlgManual.h" />
+    <ClInclude Include="DlgMenu.h" />
+    <ClInclude Include="DlgObj1.h" />
+    <ClInclude Include="DlgObj2.h" />
+    <ClInclude Include="DlgOppy.h" />
+    <ClInclude Include="DlgOptions.h" />
+    <ClInclude Include="DlgParameter.h" />
+    <ClInclude Include="DlgPerform.h" />
+    <ClInclude Include="DlgPlugin.h" />
+    <ClInclude Include="DlgPluginMan.h" />
+    <ClInclude Include="DlgPrintGantt.h" />
+    <ClInclude Include="DlgPrintMan.h" />
+    <ClInclude Include="DlgRoute.h" />
+    <ClInclude Include="DlgRunAlg.h" />
+    <ClInclude Include="DlgRunComp.h" />
+    <ClInclude Include="DlgRunCon.h" />
+    <ClInclude Include="DlgRunning.h" />
+    <ClInclude Include="DlgRunWin.h" />
+    <ClInclude Include="DlgSetup.h" />
+    <ClInclude Include="DlgStyle.h" />
+    <ClInclude Include="DlgTitle.h" />
+    <ClInclude Include="DlgWorkspace.h" />
+    <ClInclude Include="DocGantt.h" />
+    <ClInclude Include="DocJob.h" />
+    <ClInclude Include="DocLog.h" />
+    <ClInclude Include="DocMch.h" />
+    <ClInclude Include="DocObj.h" />
+    <ClInclude Include="DocSeq.h" />
+    <ClInclude Include="DocSmart.h" />
+    <ClInclude Include="DocTmpAlg.h" />
+    <ClInclude Include="DocTmpSmart.h" />
+    <ClInclude Include="Draws.h" />
+    <ClInclude Include="FrmMain.h" />
+    <ClInclude Include="FrmSmart.h" />
+    <ClInclude Include="ID.h" />
+    <ClInclude Include="Job.h" />
+    <ClInclude Include="LstLoadRoute.h" />
+    <ClInclude Include="LstSeq.h" />
+    <ClInclude Include="LstWkc.h" />
+    <ClInclude Include="Machine.h" />
+    <ClInclude Include="MarginGantt.h" />
+    <ClInclude Include="Misc.h" />
+    <ClInclude Include="Operation.h" />
+    <ClInclude Include="Plugin.h" />
+    <ClInclude Include="RelStat.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Route.h" />
+    <ClInclude Include="Schedule.h" />
+    <ClInclude Include="Sequence.h" />
+    <ClInclude Include="Setup.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TokenSet.h" />
+    <ClInclude Include="TreePlug.h" />
+    <ClInclude Include="ViewGantt.h" />
+    <ClInclude Include="ViewJob.h" />
+    <ClInclude Include="ViewLog.h" />
+    <ClInclude Include="ViewMch.h" />
+    <ClInclude Include="ViewObj.h" />
+    <ClInclude Include="ViewSeq.h" />
+    <ClInclude Include="ViewSmart.h" />
+    <ClInclude Include="ViewTree.h" />
+    <ClInclude Include="Workcenter.h" />
+    <ClInclude Include="Workspace.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\AddFile.bmp" />
+    <Image Include="Res\Alg.ico" />
+    <Image Include="Res\Brush.bmp" />
+    <Image Include="Res\Commit.bmp" />
+    <Image Include="Res\Del.bmp" />
+    <Image Include="Res\DelFile.bmp" />
+    <Image Include="Res\Down.bmp" />
+    <Image Include="Res\File.bmp" />
+    <Image Include="Res\Gantt.ico" />
+    <Image Include="Res\Intro.bmp" />
+    <Image Include="Res\Job.ico" />
+    <Image Include="Res\Lekin.ico" />
+    <Image Include="Res\Log.ico" />
+    <Image Include="Res\Mch.ico" />
+    <Image Include="Res\MMExit.bmp" />
+    <Image Include="Res\MMFlexFlow.bmp" />
+    <Image Include="Res\MMFlexJob.bmp" />
+    <Image Include="Res\MMFlow.bmp" />
+    <Image Include="Res\MMJob.bmp" />
+    <Image Include="Res\MMLoad.bmp" />
+    <Image Include="Res\MMParallel.bmp" />
+    <Image Include="Res\MMSingle.bmp" />
+    <Image Include="Res\New.bmp" />
+    <Image Include="Res\Obj.ico" />
+    <Image Include="Res\Perform.ico" />
+    <Image Include="Res\Rollback.bmp" />
+    <Image Include="Res\Seq.ico" />
+    <Image Include="Res\Stern.bmp" />
+    <Image Include="Res\TBFile.bmp" />
+    <Image Include="Res\TBGantt.bmp" />
+    <Image Include="Res\TBJob.bmp" />
+    <Image Include="Res\TBLog.bmp" />
+    <Image Include="Res\TBMachine.bmp" />
+    <Image Include="Res\TBMain.bmp" />
+    <Image Include="Res\TBObj.bmp" />
+    <Image Include="Res\TBSequence.bmp" />
+    <Image Include="Res\Up.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Hlp\Asm.hpj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building help files</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(ProjectDir)MakeHelp.bat" $(OutDir)</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Hlp\Asm.cnt;Hlp\Core.rtf;Hlp\Dialogs.rtf;Hlp\HowTo.rtf;Hlp\Intro.rtf;Hlp\Prompts.rtf;Hlp\Windows.rtf;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building help files</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(ProjectDir)MakeHelp.bat" $(OutDir)</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Hlp\Asm.cnt;Hlp\Core.rtf;Hlp\Dialogs.rtf;Hlp\HowTo.rtf;Hlp\Intro.rtf;Hlp\Prompts.rtf;Hlp\Windows.rtf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)Asm.hlp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="Hlp\Core.rtf" />
+    <None Include="Hlp\Dialogs.rtf" />
+    <None Include="Hlp\HowTo.rtf" />
+    <None Include="Hlp\Intro.rtf" />
+    <None Include="Hlp\Prompts.rtf" />
+    <None Include="Hlp\Windows.rtf" />
+    <None Include="Res\Asm.rc2" />
+    <None Include="Res\Drag.cur" />
+    <None Include="Res\DragPlus.cur" />
+    <None Include="Res\NoDrop.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Asm.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Asm.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

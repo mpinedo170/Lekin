@@ -1,0 +1,31 @@
+Shop:               Job
+Job:                J001
+  RGB:                251;66;115
+  Release:            0
+  Due:                120
+  Weight:             1
+  Oper:               InsertionMachine;20;A
+  Oper:               A4;12;A
+  Oper:               Meter;27;A
+  Oper:               Sorter;2;A
+
+Job:                J002
+  RGB:                127;114;136
+  Release:            20
+  Due:                250
+  Weight:             1
+  Oper:               InsertionMachine;40;A
+  Oper:               A4;24;A
+  Oper:               Meter;54;A
+  Oper:               Sorter;4;A
+
+Job:                J003
+  RGB:                231;153;2
+  Release:            50
+  Due:                400
+  Weight:             1
+  Oper:               InsertionMachine;50;A
+  Oper:               A4;30;A
+  Oper:               Meter;68;A
+  Oper:               Sorter;5;A
+

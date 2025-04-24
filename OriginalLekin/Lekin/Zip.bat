@@ -1,0 +1,1 @@
+"C:\Program Files\WinZip\wzzip" -u -b%TEMP% -o -P -r -ybc A:\Lekin.zip *.aps *.bat *.cpp *.h *.sln *.vcproj *.rc *.inf *.txt Asm\Res\*.* SB\Res\*.* Asm\Hlp\*.* Install\*.* Misc\Alkis\*.* Misc\Data\*.* Misc\Data2\*.* Misc\IComp.exe

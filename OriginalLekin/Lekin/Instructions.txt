@@ -1,0 +1,33 @@
+In order to build the system, you need:
+
+MS Visual Studio .NET 2017.
+Nullsoft NSIS (freeware, can be downloaded from sourceforge).
+
+Projects:
+
+AFLib -- DLL with common functions.
+Asm -- main LEKIN module.
+Gen -- problem generator (written in a hurry, just for testing purposes).
+Helper -- is used to build the help file.
+LSearch -- Local Search program by Stephan Kreipl.
+NSIBuilder -- scans the data directories, builds Data.nsh for building the installer.
+Sample -- sample algorithm that can be "linked" to LEKIN.
+SB -- Shifting Bottleneck program.
+SBLS -- Shifting Bottleneck / Local Search program by Ya Yang.
+SBTWT -- Shifting Bottleneck for Total Weighted Tardiness program by Marcos Singer.
+Summer -- computes the control sum of the program executable.
+TestAlg -- I used it to test output redirection for plug-in algorithms.
+
+Building the system.
+
+1. Copy everything from the CD to a chosen folder on the hard drive.
+2. Clear read-only attributes on all files. E.g., "attrib -R path /S /D".
+3. Open .\Asm.sln in MS Visual Studio .NET 2017.
+4. Build the Release version of the entire solution.
+5. Run NSIBuilder (either from the Explorer or from Visual Studio .NET).
+6. Open MakeNSISW (Compiler GUI).
+7. To compile .\Install\Lekin.nsi, drag it from the explorer into the MakeNSISW window.
+8. Done!  .\Media\Lekin.exe is the installer.
+
+Sample problem files can be found in Misc\Data and Misc\Data2.  They are also included
+in the installation package.

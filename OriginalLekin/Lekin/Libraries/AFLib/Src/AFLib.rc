@@ -1,0 +1,652 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "AfxRes.h"
+#include "..\Include\AFLibResource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""AfxRes.h""\r\n"
+    "#include ""..\\Include\\AFLibResource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""Res\\AFLib.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""AfxRes.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CHECK               ICON                    "Res\\Check.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_POPUP MENU 
+BEGIN
+    POPUP "Ditem"
+    BEGIN
+        MENUITEM "&New",                        ID_DITEM_NEW
+        MENUITEM "New &Folder",                 ID_DITEM_NEW_FOLDER
+        MENUITEM "&Edit",                       ID_DITEM_EDIT
+        MENUITEM "&Rename",                     ID_DITEM_RENAME
+        MENUITEM "&Delete",                     ID_DITEM_DELETE
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Scroll &Up",                  ID_EDIT_TOP
+        MENUITEM "Scroll &Down",                ID_EDIT_BOTTOM
+        MENUITEM "Select &All",                 ID_EDIT_SELECT_ALL
+        MENUITEM "Select &Paragraph",           ID_EDIT_SELECT_PAR
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LOG DIALOGEX 0, 0, 250, 150
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    CONTROL         "*",IDC_LOG_ALERT,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,10,5,230,15
+    EDITTEXT        IDC_LOG_LOG,10,25,230,90,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,100,125,60,15
+END
+
+IDD_PRINT_EX DIALOGEX 0, 0, 310, 240
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Print"
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Printer",IDC_STATIC,10,5,155,80,WS_GROUP
+    LTEXT           "&Name:",IDC_STATIC,20,20,28,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_PRINTER_NAME,50,20,105,152,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Status:",IDC_STATIC,20,35,28,10,SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,35,85,10
+    CONTROL         "",IDC_PRINTER_PROPERTIES,"Button",BS_OWNERDRAW | WS_TABSTOP,140,35,15,10
+    LTEXT           "Type:",IDC_STATIC,20,50,28,10,SS_NOPREFIX | SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_TYPE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,50,105,10
+    LTEXT           "Where:",IDC_STATIC,20,65,28,10,SS_NOPREFIX | SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_WHERE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,65,85,10
+    CONTROL         "&File",IDC_PRINTER_FILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,65,23,10
+    GROUPBOX        "Paper",IDC_STATIC,10,90,155,55,WS_GROUP
+    LTEXT           "Si&ze:",IDC_PRINTER_LAB_SIZE,20,105,28,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_PRINTER_SIZE,50,105,105,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "&Source:",IDC_PRINTER_LAB_SOURCE,20,125,28,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_PRINTER_SOURCE,50,125,105,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Margins",IDC_STATIC,10,150,155,55,WS_GROUP
+    LTEXT           "&Left:",IDC_PRINTER_LAB_LEFT,20,165,20,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRINTER_MAR_LEFT,50,165,30,12,WS_GROUP
+    LTEXT           "&Right:",IDC_PRINTER_LAB_RIGHT,90,165,30,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRINTER_MAR_RIGHT,125,165,30,12,WS_GROUP
+    LTEXT           "&Top:",IDC_PRINTER_LAB_TOP,20,185,20,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRINTER_MAR_TOP,50,185,30,12,WS_GROUP
+    LTEXT           "&Bottom:",IDC_PRINTER_LAB_BOTTOM,90,185,30,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRINTER_MAR_BOTTOM,125,185,30,12,WS_GROUP
+    CONTROL         "",IDC_PRINTER_PREVIEW,"Static",SS_WHITERECT | WS_GROUP,180,10,90,90
+    CONTROL         "",IDC_PRINTER_RIGHT_SHADOW,"Static",SS_GRAYRECT | WS_GROUP,270,15,5,90
+    CONTROL         "",IDC_PRINTER_BOTTOM_SHADOW,"Static",SS_GRAYRECT | WS_GROUP,185,100,90,5
+    CONTROL         "Slider1",IDC_PRINTER_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | WS_TABSTOP,285,15,12,85,WS_EX_CLIENTEDGE
+    GROUPBOX        "&Orientation",IDC_STATIC,175,110,125,35,WS_GROUP
+    CONTROL         "Portrait",IDC_PRINTER_PORTRAIT,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,185,125,41,10
+    CONTROL         "Landscape",IDC_PRINTER_LANDSCAPE,"Button",BS_AUTORADIOBUTTON,245,125,50,10
+    GROUPBOX        "&Pages",IDC_STATIC,175,150,125,55,WS_GROUP
+    CONTROL         "All",IDC_PRINTER_PAGE0,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,185,165,55,10
+    CONTROL         "Selection",IDC_PRINTER_PAGE1,"Button",BS_AUTORADIOBUTTON,245,165,45,10
+    CONTROL         "From",IDC_PRINTER_PAGE2,"Button",BS_AUTORADIOBUTTON,185,185,28,10
+    EDITTEXT        IDC_PRINTER_PAGE_FROM,215,185,30,12,ES_AUTOHSCROLL
+    CTEXT           "to",IDC_PRINTER_LAB0,246,185,13,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRINTER_PAGE_TO,260,185,30,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,215,60,15,WS_GROUP
+    PUSHBUTTON      "&Apply",IDC_PRINTER_APPLY,125,215,60,15
+    PUSHBUTTON      "Cancel",IDCANCEL,215,215,60,15
+END
+
+IDD_PAGE_SETUP_EX DIALOGEX 0, 0, 290, 215
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Page Setup"
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Printer",IDC_STATIC,10,5,155,80,WS_GROUP
+    LTEXT           "&Name:",IDC_STATIC,20,20,28,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_PRINTER_NAME,50,20,105,152,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Status:",IDC_STATIC,20,35,28,10,SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,35,85,10
+    CONTROL         "",IDC_PRINTER_PROPERTIES,"Button",BS_OWNERDRAW | WS_TABSTOP,140,35,15,10
+    LTEXT           "Type:",IDC_STATIC,20,50,28,10,SS_NOPREFIX | SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_TYPE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,50,105,10
+    LTEXT           "Where:",IDC_STATIC,20,65,28,10,SS_NOPREFIX | SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_WHERE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,65,85,10
+    CONTROL         "&File",IDC_PRINTER_FILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,65,23,10
+    GROUPBOX        "Paper",IDC_STATIC,10,90,155,55,WS_GROUP
+    LTEXT           "Si&ze:",IDC_PRINTER_LAB_SIZE,20,105,28,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_PRINTER_SIZE,50,105,105,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "&Source:",IDC_PRINTER_LAB_SOURCE,20,125,28,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_PRINTER_SOURCE,50,125,105,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Margins",IDC_STATIC,10,150,155,55,WS_GROUP
+    LTEXT           "&Left:",IDC_PRINTER_LAB_LEFT,20,165,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRINTER_MAR_LEFT,50,165,30,12,WS_GROUP
+    LTEXT           "&Right:",IDC_PRINTER_LAB_RIGHT,95,165,30,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRINTER_MAR_RIGHT,125,165,30,12,WS_GROUP
+    LTEXT           "&Top:",IDC_PRINTER_LAB_TOP,20,185,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRINTER_MAR_TOP,50,185,30,12,WS_GROUP
+    LTEXT           "&Bottom:",IDC_PRINTER_LAB_BOTTOM,95,185,30,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRINTER_MAR_BOTTOM,125,185,30,12,WS_GROUP
+    CONTROL         "",IDC_PRINTER_PREVIEW,"Static",SS_WHITERECT | WS_GROUP,175,10,80,80
+    CONTROL         "",IDC_PRINTER_RIGHT_SHADOW,"Static",SS_GRAYRECT | WS_GROUP,255,15,5,80
+    CONTROL         "",IDC_PRINTER_BOTTOM_SHADOW,"Static",SS_GRAYRECT | WS_GROUP,180,90,80,5
+    CONTROL         "Slider1",IDC_PRINTER_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | WS_TABSTOP,270,10,12,85,WS_EX_CLIENTEDGE
+    GROUPBOX        "&Orientation",IDC_STATIC,190,100,80,55,WS_GROUP
+    CONTROL         "Portrait",IDC_PRINTER_PORTRAIT,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,205,115,50,15
+    CONTROL         "Landscape",IDC_PRINTER_LANDSCAPE,"Button",BS_AUTORADIOBUTTON,205,135,50,10
+    DEFPUSHBUTTON   "OK",IDOK,200,165,60,15,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,200,190,60,15
+END
+
+IDD_FONT DIALOGEX 0, 0, 160, 95
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Font"
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "&Font",IDC_STATIC,10,10,140,75
+    COMBOBOX        IDC_FONT_TYPE,40,10,100,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "&Typeface",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,20,25,35,10
+    COMBOBOX        IDC_FONT_FACE,20,35,120,55,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_SORT | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Bold",IDC_FONT_BOLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,55,30,10
+    CONTROL         "&Italic",IDC_FONT_ITALIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,70,31,10
+    CONTROL         "&Size",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,75,60,18,10
+    EDITTEXT        IDC_FONT_SIZE,95,60,30,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_FONT_SIZE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,130,60,11,14
+END
+
+IDD_EMPTY DIALOGEX 0, 0, 140, 100
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+IDD_RUN DIALOGEX 0, 0, 235, 185
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_RUN_ACTION,10,10,215,10,SS_NOPREFIX
+    CONTROL         "Progress1",IDC_RUN_PROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,10,30,215,10
+    LTEXT           "",IDC_RUN_COMMENT,10,50,155,20,SS_NOPREFIX
+    PUSHBUTTON      "Cancel",IDCANCEL,175,50,50,15
+    EDITTEXT        IDC_LOG_LOG,10,75,215,100,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_LIST_HELPER DIALOGEX 0, 0, 75, 15
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_LIST,0,0,70,12,ES_AUTOHSCROLL
+END
+
+IDD_CONFIRM DIALOGEX 0, 0, 95, 50
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,0,95,50,WS_EX_DLGMODALFRAME
+    LTEXT           "Cancel - are you sure?",IDC_STATIC,10,10,75,10
+    PUSHBUTTON      "OK",IDOK,25,25,45,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,43,0,0
+ PRODUCTVERSION 3,43,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Andrew Feldman"
+            VALUE "FileDescription", "Useful class library"
+            VALUE "FileVersion", "3, 43, 0, 0"
+            VALUE "InternalName", "AFLib_R"
+            VALUE "LegalCopyright", "(C) Andrew Feldman.  All rights reserved."
+            VALUE "OriginalFilename", "AFLib_R.dll"
+            VALUE "ProductName", "AFLib"
+            VALUE "ProductVersion", "3, 43, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDU_MOVE_ONE            CURSOR                  "Res\\MoveOne.cur"
+IDU_MOVE_MANY           CURSOR                  "Res\\MoveMany.cur"
+IDU_ARROW_PLUS          CURSOR                  "Res\\ArrowPlus.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HALFTONE_BRUSH      BITMAP                  "Res\\Brush.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_RUN, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 75
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_EMPTY_DIR           "directory name cannot be empty"
+    IDS_INVALID_DIR         "enter a valid directory"
+    IDS_BAD_PRINTER_SETTINGS "invalid printer settings"
+    IDS_INVALID_PAGE        "invalid page range"
+    IDS_INVALID_INPUT       "invalid input"
+    IDS_TEMP_NOT_FOUND      "temporary file path was not found"
+    IDS_BAD_PERCENT         "invalid percent value"
+    IDS_EXTRA_CHAR          "extra characters"
+    IDS_NO_QUOTE            "missing closing quote"
+    IDS_END_AFTER_BS        "end of text after backslash"
+    IDS_NO_SEPARATOR        "separating character missing"
+    IDS_TOO_FEW_CMN         "too few columns"
+    IDS_QUA_ERR_FORMAT      "Please enter a%1 value from %2 to %3\nor a percentage amount from %4% to %5%"
+    IDS_QUA_INT             "n integer"
+    IDS_INT                 "integer"
+    IDS_UINT                "unsigned integer"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HEX                 "hexadecimal"
+    IDS_INT64               "64-bit integer"
+    IDS_UINT64              "64-bit unsigned integer"
+    IDS_HEX64               "64-bit hexadecimal"
+    IDS_NUM                 "number"
+    IDS_EOL                 "EOL"
+    IDS_TAB                 "TAB"
+    IDS_QUOTE               "Quote"
+    IDS_PM                  "plus or minus"
+    IDS_EXPECTED            "%1 expected"
+    IDS_EXPECTED_ONE_OF     "expected one of: %1"
+    IDS_PAST_EOF            "reading past the end of file"
+    IDS_PRINTER_CANCEL      "Closes the dialog box without saving any changes you have made"
+    IDS_PRINTER_OK          "; prints the document"
+    IDS_PRINTER_APPLY_ONLY  ", but does not print"
+    IDS_STRING_TOO_SHORT    "String too short, please enter at least %1 characters"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_EMPTY        "Please enter a non-empty string"
+    IDS_NO_DATA             "---%& no data &%---"
+    IDS_SET                 "set %1"
+    IDS_ALL                 "All"
+    IDS_ALL_PAGES           "All %1 pages"
+    IDS_BAD_FONT            "invalid font size"
+    IDS_BAD_SUPER_TEXT      "corrupt supertext"
+    IDS_SPEC_IN_STRING      "special character in a string"
+    IDS_EOL_IN_STRING       "end-of-line in a string"
+    IDS_WRONG_WIN           "Incorrect version of Windows"
+    IDS_WINREG              "SOFTWARE\\Microsoft\\Windows%1\\CurrentVersion"
+    IDS_NO_WIN_KEY          "cannot open the Windows registry key"
+    IDS_BREAK               "Break"
+    IDS_NO_EVERYONE         "cannot create a SID for ""Everyone"""
+    IDS_CANNOT_CREATE_DIR   "cannot create or open directory ""%1"""
+    IDS_CANNOT_CREATE_KEY   "cannot create or open registry key ""%1"""
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANNOT_SET_SECURITY "cannot reset security for object ""%1"""
+    IDS_ALNUM               "alphanumeric character"
+    IDS_CANCELLED           "operation cancelled"
+    IDS_NO_MESSAGE          "-no message-"
+    IDS_UNCLASSIFIED        "Unclassified %1"
+    IDS_WAITING_TERMINATE   "Waiting for the last operation to terminate..."
+    IDS_TIME_SPENT          "Time spent: %D:%H:%M:%S"
+    IDS_TIME_SPENT_NO_DAY   "Time spent: %H:%M:%S"
+    IDS_OUT_OF_RANGE        "%4 is out of range of %1 column %2 in query:\n%3"
+    IDS_BAD_TYPE_SET        "%1 column %2 does not accept %4 values in query:\n %3"
+    IDS_BAD_TYPE_GET        "Cannot convert %1 column %2 into %4 in query:\n%3"
+    IDS_STR_CONV_ERR        "String ""%4"" could not be converted into %1 column %2 in query:\n%3"
+    IDS_STR_AW_ERR          "%4 cannot be applied to %1 column %2 in query:\n%3"
+    IDS_BOOL                "boolean"
+    IDS_FLOAT               "floating point"
+    IDS_DATE                "date/time"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BAD_TYPE_MOD        "Bad or conflicting type modifyers"
+    IDS_UNDEF_FUNC          "Some of the declared functions were undefined"
+    IDS_PROTO_CONFLICT      "Conflicting prototypes for function ""%1"""
+    IDS_CANT_SKIP_SPACE     "Cannot skip spaces if a space is a delimiter"
+    IDS_CANT_OPEN_DB        "Cannot open the database"
+    IDS_COPYING             "Copying ""%1"""
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BINARY              "binary"
+    IDS_BIT                 "bit"
+    IDS_TINYINT             "tiny int"
+    IDS_SMALLINT            "small int"
+    IDS_REAL                "small float"
+    IDS_ASCII               "ascii string"
+    IDS_UNICODE             "unicode string"
+    IDS_BAD_FIELD_NAME      "Bad field name ""%1"""
+    IDS_BCP_ERROR           "Some rows were not inserted into %1"
+    IDS_DUP_FIELD_NAME      "Duplicate column name %1"
+    IDS_EMPTY_RS_DEF        "Empty Recordset Definition"
+    IDS_NO_BCP              "BCP is not supported"
+    IDS_NO_BULK_ADD         "ODBC Bulk Add is not supported"
+    IDS_ALREADY_OPEN        "Recordset was already open"
+    IDS_SQL_ERROR           "SQL Error: %1"
+    IDS_NO_VERSION          "No version info in %1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VARIANT             " Variant"
+    IDS_DUP_TITLE           "Duplicate title"
+    IDS_OUT_OF_BOUND        "Subscript out of range"
+    IDS_ARRAY_DIM_NOT_INT   "Array dimension is not integer"
+    IDS_ARRAY_NOT_INIT      "Array was not initialized"
+    IDS_NEGATIVE_PC         "Calculation reached a negative position (%1)"
+    IDS_NUM_TOO_LARGE       "%1 too large"
+    IDS_BAD_TYPE            "invalid type"
+    IDS_UNDO                "Undo"
+    IDS_REDO                "Redo"
+    IDS_BAD_PTR_TO_HEAP     "Bad pointer to heap"
+    IDS_BAD_START_OF_HEAP   "Bad start of heap"
+    IDS_BAD_NODE_IN_HEAP    "Bad node in heap"
+    IDS_ERROR_IN_HEAP       "Error %1 in heap"
+    IDS_NO_VERSION_DATA     "No %2 in version info for %1"
+    IDS_BAD_REDIM           "Array Redim cannot be performed due to element references in stack"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BAD_DATE_FORMAT     "Date format should be mm/dd/YYYY HH:MM:SS"
+    IDS_NO_SUCH_MENU        "Item %1 was not found in a menu"
+    IDS_SELECT_DIR          "Select directory"
+    IDS_TOO_MANY_COLUMNS    "Too many columns for an ODBC insert operation"
+    IDS_DUP_LEXEM           "Duplicate lexem ""%1"""
+    IDS_NO_LEXEM            "Lexem ""%1"" does not exist"
+    IDS_DUP_KEYWORD         "Duplicate keyword %1"
+    IDS_NO_KEYWORD          "Keyword %1 does not exist"
+    IDS_LEX_EOF             "End of file reached by Lexical Analyzer"
+    IDS_LEX_BAD_SYM         "Bad symbol ""%1"""
+    IDS_STACK_EMPTY_ON_COND "Stack empty on conditional GoTo in position %1"
+    IDS_STACK_EMPTY_ON_CALL "Not enough arguments in Stack in position %1"
+    IDS_STACK_EMPTY_ON_RET  "Stack empty on return"
+    IDS_STACK_EMPTY_ON_POP  "Not enough elements in Stack for Pop in position %1"
+    IDS_STACK_NAN           "An operation yielded Nan in position %1"
+    IDS_DUP_FUNCTION        "Duplicate function %1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PRINTER_NAME        "Lists the printers that are attached to your computer"
+    IDC_PRINTER_PROPERTIES  "Click this to set up printer-dependent options"
+    IDC_PRINTER_FILE        "Prints the document to a raw data file"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PRINTER_SIZE        "Specifies the size of the paper or envelope you want to use"
+    IDC_PRINTER_SOURCE      "Specifies where the paper is located in the printer"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PRINTER_MAR_LEFT    "Sets the printing area of the page"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PRINTER_PORTRAIT    "Specifies how the document is positioned on the printed page"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PRINTER_SLIDER      "Slide to look at other pages"
+    IDC_PRINTER_APPLY       "Closes the dialog box and saves changes you have made%1"
+    IDC_PRINTER_PAGE0       "Print the entire document"
+    IDC_PRINTER_PAGE1       "Print selection only"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PRINTER_PAGE2       "Print specific pages"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PRINTER_PREVIEW     "page %1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_FONT_TYPE           "display area to set the font for"
+    IDC_FONT_FACE           "font typeface (only TrueType fonts are available)"
+    IDC_FONT_BOLD           "use bold font"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_FONT_SIZE           "Subroutine return position in stack is not int64 in position %1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HKEY00              "HKEY_CLASSES_ROOT"
+    IDS_HKEY01              "HKEY_CURRENT_CONFIG"
+    IDS_HKEY02              "HKEY_CURRENT_USER"
+    IDS_HKEY03              "HKEY_DYN_DATA"
+    IDS_HKEY04              "HKEY_LOCAL_MACHINE"
+    IDS_HKEY05              "HKEY_PERFORMANCE_DATA"
+    IDS_HKEY06              "HKEY_PERFORMANCE_NLSTEXT"
+    IDS_HKEY07              "HKEY_PERFORMANCE_TEXT"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HKEY08              "HKEY_USERS"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NO_FUNCTION         "Function %1 does not exist"
+    IDS_DUP_OPER            "Duplicate operation %1"
+    IDS_NO_OPER             "Operation %1 does not exist"
+    IDS_ID                  "identifier"
+    IDS_LEXEM               "lexem %1"
+    IDS_OPER_NOT_IMPLEMENTED "Operation %1 is not implemented"
+    IDS_UNEXPECTED_LEXEM    "Unexpected lexem ""%1"""
+    IDS_UNDEFINED_ID        "Undefined identifier %1"
+    IDS_WRONG_ARG           "Function ""%1"" cannot be called with arguments %2"
+    IDS_COMPILE_POSITION    "Position %1"
+    IDS_OUT_OF_MEM          "Out of memory"
+    IDS_DUP_ID              "Duplicate identifier %1"
+    IDS_BAD_PREFIX_OPER     "Prefix operation %1 was applied to the wrong argument type (%2)"
+    IDS_BAD_POSTFIX_OPER    "Postfix operation %1 was applied to the wrong argument type (%2)"
+    IDS_QUEST_MISMATCH      "Alternatives of the ?: operator are of mismatching types (%1 and %2)"
+    IDS_EOF_IN_COMMENT      "Comment was not closed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_INIT_MISMATCH       "Type mismatch at initialization"
+    IDS_BAD_CONDITION       "Condition is not boolean"
+    IDS_BAD_SWITCH          "Switch expression must be integer or string"
+    IDS_CLEAR_STACK         "Clear Stack"
+    IDS_PUSH                "Push %1"
+    IDS_POP                 "Pop %1"
+    IDS_GOTO                "Jump to %1"
+    IDS_COND                "Jump to %1 if %2"
+    IDS_POP_IF_JUMP         ", pop on jump"
+    IDS_POP_IF_NOT          ", pop on non-jump"
+    IDS_CALL                "Call %1(%2)"
+    IDS_UNKNOWN_FUNC        "UF"
+    IDS_MISPLACED_BRK_CONT  "Break or continue outside of a loop"
+    IDS_BAD_LOOP_LABEL      "Undefined loop label %1"
+    IDS_NON_CONT_LABEL      "Label %1 does not define the ""continue"" operator"
+    IDS_COMPILE_LINE_COL    "Line %1, column %2"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DUP_CONSTANT        "Duplicate constant %1"
+    IDS_NO_CONSTANT         "Constant %1 does not exist"
+    IDS_QUIT                "Quit"
+    IDS_DITEM_ERR_TITLE_EMP "Title cannot be empty"
+    IDS_DITEM_ERR_TITLE_WHT "Title cannot start or end with whitespace"
+    IDS_DITEM_ERR_TITLE_ILL "Title contains a restricted symbol '%1'"
+    IDS_DITEM_DEL_DIR       "%1 is a non-empty directory.  Would you like to delete it?"
+    IDS_MOVE                "Move %1\r\n  "
+    IDS_COPY                "Copy %1\r\n  "
+    IDS_TO                  "to folder\r\n  "
+    IDS_TO_ROOT             "to the Root"
+    IDS_FOLDER              "folder"
+    IDS_COMPARE_NAN         "Runtime error: comparing a NAN"
+    IDS_CONVERT_NAN_INT     "Runtime error: converting a NAN to int"
+    IDS_DUP_LOOP_LABEL      "Duplicate loop label %1"
+    IDS_DONE                "DONE!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WAIT                "Wait..."
+    IDS_ESTIMATED           "%1 (estimated %2)"
+    IDS_SWITCH_MISMATCH     "Mismatched types in switch"
+    IDS_DUPLICATE_DEFAULT   "Duplicate default in switch"
+    IDS_SWITCH_NO_LAB       "Switch with no labels"
+    IDS_VAR_IN_SWITCH       "Switch may jump over initialization of a local variable"
+    IDS_STACK_EMPTY_ON_SUB_RET 
+                            "Not enough elements in stack for subroutine return in position %1"
+    IDS_RET_PC_NOT_INT64    "Subroutine return stack element is not INT64 in position %1"
+    IDS_RET_MISMATCH        "Type mismatch at return"
+    IDS_STACK_EMPTY_ON_CONVERT "Stack empty on type convert"
+    IDS_VOID_VAR            "Void variables are not allowed"
+    IDS_TYPE_EXPECTED       "Type name is expected"
+    IDS_GOSUB               "Gosub to %1"
+    IDS_RET                 "Return (pop %1)"
+    IDS_STACK               "Stack frame %1"
+    IDS_CONVERT             "Convert type to %1"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "Res\AFLib.rc2"  // non-Microsoft Visual C++ edited resources
+#include "AfxRes.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

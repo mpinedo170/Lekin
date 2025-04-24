@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Unicode|Win32">
+      <Configuration>Debug Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Unicode|Win32">
+      <Configuration>Release Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C85D2F48-4CF6-4284-8B5A-346208A5B6BD}</ProjectGuid>
+    <RootNamespace>AFLib</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)..\build\PropertySheets\LekinLibPropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)..\build\PropertySheets\LekinLibPropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)..\build\PropertySheets\LekinLibPropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)..\build\PropertySheets\LekinLibPropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28307.799</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>true</GenerateManifest>
+    <TargetName>AFLib_D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>true</GenerateManifest>
+    <TargetName>AFLib_R</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">
+    <GenerateManifest>true</GenerateManifest>
+    <TargetName>AFLib_DU</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <TargetName>AFLib_RU</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>version.lib;odbc32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)AFLib_D.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>AFLib_D.def</ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)AFLib_D.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>version.lib;odbc32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)AFLib_R.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>AFLib_R.def</ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)AFLib_R.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>version.lib;odbc32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)AFLib_DU.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>AFLib_DU.def</ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)AFLib_DU.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>version.lib;odbc32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)AFLib_RU.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>AFLib_RU.def</ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)AFLib_RU.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AFLib.cpp" />
+    <ClCompile Include="AFListDrawData.cpp" />
+    <ClCompile Include="AppAF.cpp" />
+    <ClCompile Include="Arrays.cpp" />
+    <ClCompile Include="BitMask.cpp" />
+    <ClCompile Include="BlockMBCounter.cpp" />
+    <ClCompile Include="BtnImg.cpp" />
+    <ClCompile Include="BtnOwner.cpp" />
+    <ClCompile Include="BtnTxt.cpp" />
+    <ClCompile Include="CalcData.cpp" />
+    <ClCompile Include="CalcDataArray.cpp" />
+    <ClCompile Include="CalcDataBool.cpp" />
+    <ClCompile Include="CalcDataFloat.cpp" />
+    <ClCompile Include="CalcDataInt.cpp" />
+    <ClCompile Include="CalcDataString.cpp" />
+    <ClCompile Include="CalcGlobal.cpp" />
+    <ClCompile Include="CalcStack.cpp" />
+    <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="CartesianPoint.cpp" />
+    <ClCompile Include="CbdDataUnit.cpp" />
+    <ClCompile Include="CbiDataUnit.cpp" />
+    <ClCompile Include="CbsDataUnit.cpp" />
+    <ClCompile Include="ChkDataUnit.cpp" />
+    <ClCompile Include="ClusterSet.cpp" />
+    <ClCompile Include="CmbFont.cpp" />
+    <ClCompile Include="CmbOwner.cpp" />
+    <ClCompile Include="Column.cpp" />
+    <ClCompile Include="Column2.cpp" />
+    <ClCompile Include="Compiler.cpp" />
+    <ClCompile Include="CompilerMagic.cpp" />
+    <ClCompile Include="ConcatHandler.cpp" />
+    <ClCompile Include="CursorSet.cpp" />
+    <ClCompile Include="DatabaseAF.cpp" />
+    <ClCompile Include="DatabasePool.cpp" />
+    <ClCompile Include="DataMass.cpp" />
+    <ClCompile Include="DataUnit.cpp" />
+    <ClCompile Include="DBField.cpp" />
+    <ClCompile Include="DBGlobal.cpp" />
+    <ClCompile Include="DblDataUnit.cpp" />
+    <ClCompile Include="DCStateSaver.cpp" />
+    <ClCompile Include="DDataUnit.cpp" />
+    <ClCompile Include="DDX.cpp" />
+    <ClCompile Include="DirDataUnit.cpp" />
+    <ClCompile Include="Ditem.cpp" />
+    <ClCompile Include="DitemArray.cpp" />
+    <ClCompile Include="Dlg.cpp" />
+    <ClCompile Include="DlgConfirm.cpp" />
+    <ClCompile Include="DlgDitemDetails.cpp" />
+    <ClCompile Include="DlgListHelper.cpp" />
+    <ClCompile Include="DlgLog.cpp" />
+    <ClCompile Include="DlgPrint.cpp" />
+    <ClCompile Include="DlgRun.cpp" />
+    <ClCompile Include="DlgSDSupport.cpp" />
+    <ClCompile Include="DlgSelfDestruct.cpp" />
+    <ClCompile Include="DlgTT.cpp" />
+    <ClCompile Include="DocAF.cpp" />
+    <ClCompile Include="DragField.cpp" />
+    <ClCompile Include="EditCode.cpp" />
+    <ClCompile Include="EditLog.cpp" />
+    <ClCompile Include="ExcBreak.cpp" />
+    <ClCompile Include="ExcMessage.cpp" />
+    <ClCompile Include="ExcMsgBox.cpp" />
+    <ClCompile Include="FileKiller.cpp" />
+    <ClCompile Include="FileParser.cpp" />
+    <ClCompile Include="FileParserAbstract.cpp" />
+    <ClCompile Include="FileTemp.cpp" />
+    <ClCompile Include="FontDescriptor.cpp" />
+    <ClCompile Include="FrmAF.cpp" />
+    <ClCompile Include="FuncManager.cpp" />
+    <ClCompile Include="FuncPrototype.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="GuiGlobal.cpp" />
+    <ClCompile Include="IDataUnit.cpp" />
+    <ClCompile Include="IDManager.cpp" />
+    <ClCompile Include="ImageAF.cpp" />
+    <ClCompile Include="IntDataUnit.cpp" />
+    <ClCompile Include="IntervalSet.cpp" />
+    <ClCompile Include="IOGlobal.cpp" />
+    <ClCompile Include="LCBDraw.cpp" />
+    <ClCompile Include="LexAlanalyzerCCode.cpp" />
+    <ClCompile Include="LexAlanalyzerCExpr.cpp" />
+    <ClCompile Include="LexAnalyzer.cpp" />
+    <ClCompile Include="LexParser.cpp" />
+    <ClCompile Include="LibBcp.cpp" />
+    <ClCompile Include="LibEnum.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="LstDitem.cpp" />
+    <ClCompile Include="LstDragCompanion.cpp" />
+    <ClCompile Include="LstMask.cpp" />
+    <ClCompile Include="LstOwner.cpp" />
+    <ClCompile Include="Margin.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="MemoryBulk.cpp" />
+    <ClCompile Include="MenuBitmapper.cpp" />
+    <ClCompile Include="MenuItemInfo.cpp" />
+    <ClCompile Include="MetFileDCAF.cpp" />
+    <ClCompile Include="ModalCounter.cpp" />
+    <ClCompile Include="MskDataUnit.cpp" />
+    <ClCompile Include="PrcDataUnit.cpp" />
+    <ClCompile Include="PreviewViewAF.cpp" />
+    <ClCompile Include="PrintGlobal.cpp" />
+    <ClCompile Include="ProFont.cpp" />
+    <ClCompile Include="ProTT.cpp" />
+    <ClCompile Include="QuaDataUnit.cpp" />
+    <ClCompile Include="Quantity.cpp" />
+    <ClCompile Include="RadDataUnit.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="RecordsetAF.cpp" />
+    <ClCompile Include="RecordsetDef.cpp" />
+    <ClCompile Include="RecordsetParam.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="RichEditCtrlW.cpp" />
+    <ClCompile Include="Row.cpp" />
+    <ClCompile Include="RowNC.cpp" />
+    <ClCompile Include="SDataUnit.cpp" />
+    <ClCompile Include="Security.cpp" />
+    <ClCompile Include="SemaLock.cpp" />
+    <ClCompile Include="SemaphoreAF.cpp" />
+    <ClCompile Include="SimpleType.cpp" />
+    <ClCompile Include="SpinInfinity.cpp" />
+    <ClCompile Include="SpnDataUnit.cpp" />
+    <ClCompile Include="SpnInfDataUnit.cpp" />
+    <ClCompile Include="SpnPrcDataUnit.cpp" />
+    <ClCompile Include="SQLStatement.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Storage.cpp" />
+    <ClCompile Include="StrDataUnit.cpp" />
+    <ClCompile Include="StringBufferGeneric.cpp" />
+    <ClCompile Include="StringParser.cpp" />
+    <ClCompile Include="StringParserAbstract.cpp" />
+    <ClCompile Include="StringParserGeneral.cpp" />
+    <ClCompile Include="Strings.cpp" />
+    <ClCompile Include="StringSpacer.cpp" />
+    <ClCompile Include="StringTokenizer.cpp" />
+    <ClCompile Include="StringTokenizerAbstract.cpp" />
+    <ClCompile Include="StringTokenizerAlt.cpp" />
+    <ClCompile Include="StringTokenizerStr.cpp" />
+    <ClCompile Include="StringTokenizerText.cpp" />
+    <ClCompile Include="StringWriter.cpp" />
+    <ClCompile Include="SuperText.cpp" />
+    <ClCompile Include="SuperText2.cpp" />
+    <ClCompile Include="SuperText3.cpp" />
+    <ClCompile Include="TextParser.cpp" />
+    <ClCompile Include="Thread.cpp" />
+    <ClCompile Include="TreeDitem.cpp" />
+    <ClCompile Include="TreeOwner.cpp" />
+    <ClCompile Include="Undo.cpp" />
+    <ClCompile Include="UndoOp.cpp" />
+    <ClCompile Include="ViewAF.cpp" />
+    <ClCompile Include="ViewEx.cpp" />
+    <ClCompile Include="ViewSplitted.cpp" />
+    <ClCompile Include="WildCard.cpp" />
+    <ClCompile Include="WildCardMSAccess.cpp" />
+    <ClCompile Include="WndAFHeader.cpp" />
+    <ClCompile Include="WndAFSplitter.cpp" />
+    <ClCompile Include="WndDragHelper.cpp" />
+    <ClCompile Include="Worc.cpp" />
+    <ClCompile Include="Worcer.cpp" />
+    <ClCompile Include="WorcerRead.cpp" />
+    <ClCompile Include="Work.cpp" />
+    <ClCompile Include="Worker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AFLib_D.def" />
+    <None Include="AFLib_DU.def" />
+    <None Include="AFLib_R.def" />
+    <None Include="AFLib_RU.def" />
+    <None Include="Res\AFLib.rc2" />
+    <None Include="Res\ArrowPlus.cur" />
+    <None Include="Res\MoveMany.cur" />
+    <None Include="Res\MoveOne.cur" />
+    <None Include="Res\NoDrop.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\AFLib.h" />
+    <ClInclude Include="..\Include\AFLib3State.h" />
+    <ClInclude Include="..\Include\AFLibAFListDrawData.h" />
+    <ClInclude Include="..\Include\AFLibAppAF.h" />
+    <ClInclude Include="..\Include\AFLibArrays.h" />
+    <ClInclude Include="..\Include\AFLibBitMask.h" />
+    <ClInclude Include="..\Include\AFLibBtnImg.h" />
+    <ClInclude Include="..\Include\AFLibBtnOwner.h" />
+    <ClInclude Include="..\Include\AFLibBtnTxt.h" />
+    <ClInclude Include="..\Include\AFLibCalcData.h" />
+    <ClInclude Include="..\Include\AFLibCalcGlobal.h" />
+    <ClInclude Include="..\Include\AFLibCalcStack.h" />
+    <ClInclude Include="..\Include\AFLibCalculator.h" />
+    <ClInclude Include="..\Include\AFLibCardIntervalSet.h" />
+    <ClInclude Include="..\Include\AFLibCartesianPoint.h" />
+    <ClInclude Include="..\Include\AFLibCbdDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibCbiDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibCbsDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibChkDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibClusterSet.h" />
+    <ClInclude Include="..\Include\AFLibCmbFont.h" />
+    <ClInclude Include="..\Include\AFLibCmbOwner.h" />
+    <ClInclude Include="..\Include\AFLibCollections.h" />
+    <ClInclude Include="..\Include\AFLibColumn.h" />
+    <ClInclude Include="..\Include\AFLibCompiler.h" />
+    <ClInclude Include="..\Include\AFLibConcatHandler.h" />
+    <ClInclude Include="..\Include\AFLibCursorSet.h" />
+    <ClInclude Include="..\Include\AFLibDatabaseAF.h" />
+    <ClInclude Include="..\Include\AFLibDatabasePool.h" />
+    <ClInclude Include="..\Include\AFLibDataMass.h" />
+    <ClInclude Include="..\Include\AFLibDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibDBField.h" />
+    <ClInclude Include="..\Include\AFLibDBGlobal.h" />
+    <ClInclude Include="..\Include\AFLibDblDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibDCStateSaver.h" />
+    <ClInclude Include="..\Include\AFLibDDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibDefine.h" />
+    <ClInclude Include="..\Include\AFLibDirDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibDitem.h" />
+    <ClInclude Include="..\Include\AFLibDitemArray.h" />
+    <ClInclude Include="..\Include\AFLibDlg.h" />
+    <ClInclude Include="..\Include\AFLibDlgDitemDetails.h" />
+    <ClInclude Include="..\Include\AFLibDlgLog.h" />
+    <ClInclude Include="..\Include\AFLibDlgPrint.h" />
+    <ClInclude Include="..\Include\AFLibDlgRun.h" />
+    <ClInclude Include="..\Include\AFLibDlgSDSupport.h" />
+    <ClInclude Include="..\Include\AFLibDlgSelfDestruct.h" />
+    <ClInclude Include="..\Include\AFLibDlgTT.h" />
+    <ClInclude Include="..\Include\AFLibDocAF.h" />
+    <ClInclude Include="..\Include\AFLibDragField.h" />
+    <ClInclude Include="..\Include\AFLibEditCode.h" />
+    <ClInclude Include="..\Include\AFLibEditLog.h" />
+    <ClInclude Include="..\Include\AFLibExcBreak.h" />
+    <ClInclude Include="..\Include\AFLibExcMessage.h" />
+    <ClInclude Include="..\Include\AFLibExcMsgBox.h" />
+    <ClInclude Include="..\Include\AFLibFileKiller.h" />
+    <ClInclude Include="..\Include\AFLibFileParser.h" />
+    <ClInclude Include="..\Include\AFLibFileParserAbstract.h" />
+    <ClInclude Include="..\Include\AFLibFileTemp.h" />
+    <ClInclude Include="..\Include\AFLibFontDescriptor.h" />
+    <ClInclude Include="..\Include\AFLibFrmAF.h" />
+    <ClInclude Include="..\Include\AFLibFuncManager.h" />
+    <ClInclude Include="..\Include\AFLibFuncPrototype.h" />
+    <ClInclude Include="..\Include\AFLibGlobal.h" />
+    <ClInclude Include="..\Include\AFLibGuiGlobal.h" />
+    <ClInclude Include="..\Include\AFLibHeap.h" />
+    <ClInclude Include="..\Include\AFLibIDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibIDManager.h" />
+    <ClInclude Include="..\Include\AFLibImageAF.h" />
+    <ClInclude Include="..\Include\AFLibIntDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibIntervalSet.h" />
+    <ClInclude Include="..\Include\AFLibIOGlobal.h" />
+    <ClInclude Include="..\Include\AFLibLCBDraw.h" />
+    <ClInclude Include="..\Include\AFLibLexAnalyzer.h" />
+    <ClInclude Include="..\Include\AFLibLexAnalyzerCCode.h" />
+    <ClInclude Include="..\Include\AFLibLexAnalyzerCExpr.h" />
+    <ClInclude Include="..\Include\AFLibLexParser.h" />
+    <ClInclude Include="..\Include\AFLibLog.h" />
+    <ClInclude Include="..\Include\AFLibLstDitem.h" />
+    <ClInclude Include="..\Include\AFLibLstDragCompanion.h" />
+    <ClInclude Include="..\Include\AFLibLstMask.h" />
+    <ClInclude Include="..\Include\AFLibLstOwner.h" />
+    <ClInclude Include="..\Include\AFLibMaps.h" />
+    <ClInclude Include="..\Include\AFLibMargin.h" />
+    <ClInclude Include="..\Include\AFLibMathGlobal.h" />
+    <ClInclude Include="..\Include\AFLibMemoryBulk.h" />
+    <ClInclude Include="..\Include\AFLibMenuBitmapper.h" />
+    <ClInclude Include="..\Include\AFLibMenuItemInfo.h" />
+    <ClInclude Include="..\Include\AFLibMetaFileDCAF.h" />
+    <ClInclude Include="..\Include\AFLibModalCounter.h" />
+    <ClInclude Include="..\Include\AFLibMskDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibOleVariantArray.h" />
+    <ClInclude Include="..\Include\AFLibPointers.h" />
+    <ClInclude Include="..\Include\AFLibPrcDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibPreviewViewAF.h" />
+    <ClInclude Include="..\Include\AFLibProFont.h" />
+    <ClInclude Include="..\Include\AFLibProTT.h" />
+    <ClInclude Include="..\Include\AFLibQuaDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibQuantity.h" />
+    <ClInclude Include="..\Include\AFLibRadDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibRandom.h" />
+    <ClInclude Include="..\Include\AFLibRecordsetAF.h" />
+    <ClInclude Include="..\Include\AFLibRecordsetDef.h" />
+    <ClInclude Include="..\Include\AFLibRecordsetParam.h" />
+    <ClInclude Include="..\Include\AFLibResource.h" />
+    <ClInclude Include="..\Include\AFLibRichEditCtrlW.h" />
+    <ClInclude Include="..\Include\AFLibRow.h" />
+    <ClInclude Include="..\Include\AFLibRowNC.h" />
+    <ClInclude Include="..\Include\AFLibSDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibSemaLock.h" />
+    <ClInclude Include="..\Include\AFLibSemaphoreAF.h" />
+    <ClInclude Include="..\Include\AFLibSimpleType.h" />
+    <ClInclude Include="..\Include\AFLibSpinInfinity.h" />
+    <ClInclude Include="..\Include\AFLibSpnDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibSpnInfDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibSpnPrcDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibStorage.h" />
+    <ClInclude Include="..\Include\AFLibStrDataUnit.h" />
+    <ClInclude Include="..\Include\AFLibStringBuffer.h" />
+    <ClInclude Include="..\Include\AFLibStringBufferGeneric.h" />
+    <ClInclude Include="..\Include\AFLibStringParser.h" />
+    <ClInclude Include="..\Include\AFLibStringParserAbstract.h" />
+    <ClInclude Include="..\Include\AFLibStringParserGeneral.h" />
+    <ClInclude Include="..\Include\AFLibStrings.h" />
+    <ClInclude Include="..\Include\AFLibStringSpacer.h" />
+    <ClInclude Include="..\Include\AFLibStringTokenizer.h" />
+    <ClInclude Include="..\Include\AFLibStringTokenizerAbstract.h" />
+    <ClInclude Include="..\Include\AFLibStringTokenizerAlt.h" />
+    <ClInclude Include="..\Include\AFLibStringTokenizerStr.h" />
+    <ClInclude Include="..\Include\AFLibStringTokenizerText.h" />
+    <ClInclude Include="..\Include\AFLibStringWriter.h" />
+    <ClInclude Include="..\Include\AFLibSuperText.h" />
+    <ClInclude Include="..\Include\AFLibTempTT.h" />
+    <ClInclude Include="..\Include\AFLibTestMaps.h" />
+    <ClInclude Include="..\Include\AFLibTextParser.h" />
+    <ClInclude Include="..\Include\AFLibThread.h" />
+    <ClInclude Include="..\Include\AFLibThreadSafeConst.h" />
+    <ClInclude Include="..\Include\AFLibThreadSafeStatic.h" />
+    <ClInclude Include="..\Include\AFLibTreeDitem.h" />
+    <ClInclude Include="..\Include\AFLibTreeOwner.h" />
+    <ClInclude Include="..\Include\AFLibUndo.h" />
+    <ClInclude Include="..\Include\AFLibUndoOp.h" />
+    <ClInclude Include="..\Include\AFLibViewAF.h" />
+    <ClInclude Include="..\Include\AFLibViewEx.h" />
+    <ClInclude Include="..\Include\AFLibViewSplitted.h" />
+    <ClInclude Include="..\Include\AFLibViewTempEx.h" />
+    <ClInclude Include="..\Include\AFLibWildCard.h" />
+    <ClInclude Include="..\Include\AFLibWildCardMSAccess.h" />
+    <ClInclude Include="..\Include\AFLibWndAFHeader.h" />
+    <ClInclude Include="..\Include\AFLibWndAFSplitter.h" />
+    <ClInclude Include="..\Include\AFLibWorc.h" />
+    <ClInclude Include="..\Include\AFLibWorcer.h" />
+    <ClInclude Include="..\Include\AFLibWork.h" />
+    <ClInclude Include="..\Include\AFLibWorker.h" />
+    <ClInclude Include="DlgConfirm.h" />
+    <ClInclude Include="DlgListHelper.h" />
+    <ClInclude Include="LibBcp.h" />
+    <ClInclude Include="LibEnum.h" />
+    <ClInclude Include="Local.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SQLStatement.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="WndDragHelper.h" />
+    <ClInclude Include="WorcerRead.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AFLib.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\Brush.bmp" />
+    <Image Include="Res\Check.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="AFLib.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

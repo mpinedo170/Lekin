@@ -1,0 +1,67 @@
+LEKIN (June 1998)
+====================
+
+LEKIN is an academic scheduling system.  Its main purpose is to introduce
+the students to scheduling theory and applications.  However, the system's
+extensibility allows (and encourages) to use it as an algorithm development
+tool.
+
+LEKIN supports 6 basic environments: single m/c, parallel m/c, flow shop,
+flexible flow shop, job shop, and flexible job shop.
+
+Release version notes
+========================
+
+This is a fully functional version, with a complete online manual.  However,
+a few minor bugs may have escaped our extensive testing.  Please contact the
+developers (see below) if you find any.
+
+System requirements
+======================
+    - IBM PC compatible
+    - Windows 95, 98, Me, NT 4.0, 2000, XP
+    - 5 MB Hard disk space
+    - 8 MB RAM (16 MB recommended)
+    - 1 MB video RAM (2 MB recommended)
+
+Comment: LEKIN heavily uses colors -- to identify machines and jobs.  Although
+we specifically made sure that the system works well in the 256-color mode, it
+is strongly recommended to set up your screen to high-color mode (at least
+32768 colors).  If LEKIN discovers that your screen mode is low-color, it bugs
+you to "increase the color depth of your screen".
+
+To install
+=============
+
+Please read these instructions carefully.  Although the installation process is
+straightforward, there are some important points you don't want to miss.  Please
+pay special attention to step 3.
+
+In order to install LEKIN in your system, you have to execute the "Lekin.exe"
+file.  You can obtain this file from the Web, over e-mail, or on a CD.
+
+     1. Carefully read the terms of the License agreement and press "I agree".
+     2. Select an installation directory for LEKIN.  Default is
+        "C:\Program Files\Lekin"; you can change it as you wish.  Press "Next"
+        when you are done.  If LEKIN has been previously installed in your
+        system, you will not be allowed to change the installation directory.
+        If you need to change it, you will need to cancel setup, uninstall
+        LEKIN through Control Panel, and rerun setup.
+     3. If you intend to use LEKIN for developing your own algorithms and sending
+        them out, you should identify yourself -- more or less uniquely.  Otherwise,
+        when someone tries to import your algorithm into his system, it may wipe out
+        one of the previously imported algorithms.  You should choose a "call sign"
+        for yourself.  The name of your company, accompanied by your own name,
+        should do the trick.  Please press "Install" when done.
+     4. LEKIN will now install itself onto your system.
+     5. Press "Close".  LEKIN was successfully installed!
+
+Program support
+==================
+With questions / comments / bug reports / compliments, you are always welcome to
+contact:
+
+- the superviser of the project -- Michael Pinedo (mpinedo@stern.nyu.edu)
+- the chief designer/programmer -- Andrew Feldman (abfeld@optonline.net)
+
+                                               Copyright 1998.

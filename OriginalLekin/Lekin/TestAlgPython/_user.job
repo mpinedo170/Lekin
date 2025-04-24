@@ -1,0 +1,25 @@
+Shop:               Single
+Job:                Job000
+  Release:            0
+  Due:                0
+  Weight:             1
+  Oper:               Wkc000;5;A
+
+Job:                Job001
+  Release:            2
+  Due:                0
+  Weight:             1
+  Oper:               Wkc000;4;A
+
+Job:                Job002
+  Release:            3
+  Due:                0
+  Weight:             1
+  Oper:               Wkc000;7;A
+
+Job:                Job003
+  Release:            14
+  Due:                0
+  Weight:             1
+  Oper:               Wkc000;5;A
+

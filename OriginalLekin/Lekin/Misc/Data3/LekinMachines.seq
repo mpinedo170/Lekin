@@ -1,0 +1,31 @@
+Schedule:           General SB Routine / Lmax
+  RGB:                183;63;59
+  Time:               1
+  Machine:            InsertionMachine;InsertionMachine:1
+    Oper:               J001
+  Machine:            InsertionMachine;InsertionMachine:2
+    Oper:               J002
+  Machine:            InsertionMachine;InsertionMachine:3
+    Oper:               J003
+  Machine:            InsertionMachine;InsertionMachine:4
+  Machine:            InsertionMachine;InsertionMachine:5
+  Machine:            A4;A4:1
+    Oper:               J001
+    Oper:               J002
+    Oper:               J003
+  Machine:            Meter;Meter:1
+    Oper:               J001
+    Oper:               J002
+  Machine:            Meter;Meter:2
+    Oper:               J003
+  Machine:            Meter;Meter:3
+  Machine:            Meter;Meter:4
+  Machine:            Meter;Meter:5
+  Machine:            Meter;Meter:6
+  Machine:            Meter;Meter:7
+  Machine:            Sorter;Sorter:1
+    Oper:               J001
+    Oper:               J002
+    Oper:               J003
+  Machine:            Sorter;Sorter:2
+

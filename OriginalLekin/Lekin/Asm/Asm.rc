@@ -1,0 +1,1780 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "AFLibResource.h"
+#include "AfxRes.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_INTRO               BITMAP                  "Res\\Intro.bmp"
+IDB_STERN               BITMAP                  "Res\\Stern.bmp"
+IDB_MM_SINGLE           BITMAP                  "Res\\MMSingle.bmp"
+IDB_MM_PARALLEL         BITMAP                  "Res\\MMParallel.bmp"
+IDB_MM_FLOW             BITMAP                  "Res\\MMFlow.bmp"
+IDB_MM_JOB              BITMAP                  "Res\\MMJob.bmp"
+IDB_MM_FLEXFLOW         BITMAP                  "Res\\MMFlexFlow.bmp"
+IDB_MM_FLEXJOB          BITMAP                  "Res\\MMFlexJob.bmp"
+IDB_MM_LOAD             BITMAP                  "Res\\MMLoad.bmp"
+IDB_MM_EXIT             BITMAP                  "Res\\MMExit.bmp"
+IDR_MAINFRAME           BITMAP                  "Res\\TBMain.bmp"
+IDR_MCH                 BITMAP                  "Res\\TBMachine.bmp"
+IDR_JOB                 BITMAP                  "Res\\TBJob.bmp"
+IDR_SEQ                 BITMAP                  "Res\\TBSequence.bmp"
+IDR_GANTT               BITMAP                  "Res\\TBGantt.bmp"
+IDR_LOG                 BITMAP                  "Res\\TBLog.bmp"
+IDR_OBJ                 BITMAP                  "Res\\TBObj.bmp"
+IDB_UP                  BITMAP                  "Res\\Up.bmp"
+IDB_DOWN                BITMAP                  "Res\\Down.bmp"
+IDB_NEW                 BITMAP                  "Res\\New.bmp"
+IDB_DEL                 BITMAP                  "Res\\Del.bmp"
+IDB_ROLLBACK            BITMAP                  "Res\\Rollback.bmp"
+IDB_COMMIT              BITMAP                  "Res\\Commit.bmp"
+IDB_ADDFILE             BITMAP                  "Res\\AddFile.bmp"
+IDB_DELFILE             BITMAP                  "Res\\DelFile.bmp"
+IDB_FILE                BITMAP                  "Res\\File.bmp"
+IDT_FILE                BITMAP                  "Res\\TBFile.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "Res\\Lekin.ico"
+IDR_MCH                 ICON                    "Res\\Mch.ico"
+IDR_JOB                 ICON                    "Res\\Job.ico"
+IDR_SEQ                 ICON                    "Res\\Seq.ico"
+IDR_GANTT               ICON                    "Res\\Gantt.ico"
+IDR_OBJ                 ICON                    "Res\\Obj.ico"
+IDR_LOG                 ICON                    "Res\\Log.ico"
+IDR_ALG                 ICON                    "Res\\Alg.ico"
+IDI_PERFORM             ICON                    "Res\\Perform.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""AFLibResource.h""\r\n"
+    "#include ""AfxRes.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""Res\\Asm.rc2""  // non-App Studio edited resources\r\n"
+    "\r\n"
+    "#include ""AfxRes.rc""  // Standard components\r\n"
+    "#include ""AfxPrint.rc""  // printing/print preview resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MCH MENU 
+BEGIN
+    POPUP "Workcenter"
+    BEGIN
+        MENUITEM "&Add...",                     ID_WKC_ADD
+        MENUITEM "&Edit...",                    ID_WKC_EDIT
+        MENUITEM "&Delete",                     ID_WKC_DEL
+    END
+    POPUP "&Machine"
+    BEGIN
+        MENUITEM "&Add...",                     ID_MCH_ADD
+        MENUITEM "&Edit...",                    ID_MCH_EDIT
+        MENUITEM "&Delete",                     ID_MCH_DEL
+    END
+END
+
+IDR_JOB MENU 
+BEGIN
+    POPUP "&Job"
+    BEGIN
+        MENUITEM "&Add...",                     ID_JOB_ADD
+        MENUITEM "&Edit...",                    ID_JOB_EDIT
+        MENUITEM "&Delete",                     ID_JOB_DEL
+    END
+    POPUP "&Operation"
+    BEGIN
+        MENUITEM "&Add...",                     ID_OPER_ADD
+        MENUITEM "&Edit...",                    ID_OPER_EDIT
+        MENUITEM "&Delete",                     ID_OPER_DEL
+    END
+    POPUP "So&rt"
+    BEGIN
+        MENUITEM "by &Name",                    ID_J_SORT_NAME
+        MENUITEM "by &Proc.Time",               ID_J_SORT_PROCESSING
+        MENUITEM "by &Due Date",                ID_J_SORT_DUE
+        MENUITEM "by &Weight",                  ID_J_SORT_WEIGHT
+        MENUITEM "by &Release Date",            ID_J_SORT_RELEASE
+    END
+END
+
+IDR_GANTT MENU 
+BEGIN
+    POPUP "&Zoom"
+    BEGIN
+        MENUITEM "&Longer",                     ID_ZOOM_LONGER
+        MENUITEM "&Shorter",                    ID_ZOOM_SHORTER
+        MENUITEM SEPARATOR
+        MENUITEM "&Wider",                      ID_ZOOM_WIDER
+        MENUITEM "&Narrower",                   ID_ZOOM_NARROWER
+        MENUITEM SEPARATOR
+        MENUITEM "&Fit",                        ID_ZOOM_FIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Grid Lines",                 ID_VIEW_GRID
+        MENUITEM "&Job Names",                  ID_VIEW_JOB
+        MENUITEM "&Late Jobs",                  ID_VIEW_LATE
+        MENUITEM "&Status Pairs",               ID_VIEW_STAT
+    END
+END
+
+IDR_LOG MENU 
+BEGIN
+    POPUP "&Log"
+    BEGIN
+        MENUITEM "&Copy Schedule",              ID_LOG_ADD
+        MENUITEM "&Edit Schedule...",           ID_LOG_EDIT
+        MENUITEM "&Delete Schedule",            ID_LOG_DEL
+    END
+    POPUP "So&rt"
+    BEGIN
+        MENUITEM "by &Name",                    ID_S_SORT_NAME
+        MENUITEM "*",                           ID_S_SORT_OBJ0
+        MENUITEM SEPARATOR
+        MENUITEM "*",                           ID_S_SORT_OBJ1
+        MENUITEM "*",                           ID_S_SORT_OBJ2
+        MENUITEM "*",                           ID_S_SORT_OBJ3
+        MENUITEM "*",                           ID_S_SORT_OBJ4
+        MENUITEM "*",                           ID_S_SORT_OBJ5
+        MENUITEM "*",                           ID_S_SORT_OBJ6
+        MENUITEM "*",                           ID_S_SORT_OBJ7
+    END
+END
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "W&orkspace"
+    BEGIN
+        MENUITEM "&New...",                     ID_WKT_NEW
+        MENUITEM "&Save",                       ID_WKT_SAVE
+        MENUITEM "Save &As...",                 ID_WKT_SAVE_AS
+        MENUITEM "Se&ttings...",                ID_WKT_SETTINGS
+        MENUITEM "&Print...",                   ID_WKT_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent",                      ID_FILE_MRU_FILE13, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "Open...\tCtrl+O",             ID_FILE_OPEN
+        MENUITEM "App&end...",                  ID_FILE_APP
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Schedule"
+    BEGIN
+        POPUP "&Rule"
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+        POPUP "&Heuristic"
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+        POPUP "&Log"
+        BEGIN
+            MENUITEM "&Log Book",                   ID_WIN5
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Manual Entry...",            ID_RULE_MANUAL
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Objectives...",              ID_TOOL_OBJ
+        MENUITEM "&Performance...",             ID_TOOL_PRF
+        MENUITEM "Plug-in Manager...",          ID_TOOL_PLUGIN
+        MENUITEM "Op&tions...",                 ID_TOOL_OPTIONS
+        MENUITEM "Generic Names",               ID_TOOL_GENERIC
+        MENUITEM "Convert Files...",            ID_TOOL_CONVERT
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "Data Input",                  ID_WIN_SHOW0
+        MENUITEM "Single Schedule",             ID_WIN_SHOW1
+        MENUITEM "Multiple Schedules",          ID_WIN_SHOW2
+        MENUITEM "Schedule Analysis",           ID_WIN_SHOW3
+        MENUITEM SEPARATOR
+        MENUITEM "&Cascade",                    ID_WIN_CASCADE
+        MENUITEM "&Tile",                       ID_WIN_TILE
+        MENUITEM SEPARATOR
+        MENUITEM "&1 Machine Park",             ID_WIN0
+        MENUITEM "&2 Job Pool",                 ID_WIN1
+        MENUITEM "&3 Sequence",                 ID_WIN2
+        MENUITEM "&4 Gantt Chart",              ID_WIN3
+        MENUITEM "&5 Objective Chart",          ID_WIN4
+        MENUITEM "&6 Log Book",                 ID_WIN5
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help",                       ID_HELP
+        MENUITEM "Help &Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About LEKIN...",             ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+IDR_MCH ACCELERATORS 
+BEGIN
+    VK_INSERT,      ID_WKC_ADD,             VIRTKEY, NOINVERT
+    VK_INSERT,      ID_MCH_ADD,             VIRTKEY, SHIFT, NOINVERT
+END
+
+IDR_JOB ACCELERATORS 
+BEGIN
+    VK_INSERT,      ID_JOB_ADD,             VIRTKEY, NOINVERT
+    VK_INSERT,      ID_OPER_ADD,            VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADD_MCH DIALOG  70, 50, 160, 180
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Machine"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    RTEXT           "Workcenter ID",IDC_STATIC,10,10,50,15,SS_CENTERIMAGE
+    COMBOBOX        IDC_WKC_ID,65,10,85,55,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | CBS_NOINTEGRALHEIGHT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,10,30,140,115
+    RTEXT           "Machine ID",IDC_STATIC,15,45,40,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_MCH_ID,60,45,80,12,ES_AUTOHSCROLL
+    RTEXT           "Comments",IDC_STATIC,15,65,40,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_MCH_NAME,60,65,80,12,ES_AUTOHSCROLL
+    RTEXT           "# of machines",IDC_LAB_COUNT,15,85,65,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_MCH_COUNT,85,85,35,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_MCH_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,125,85,8,12
+    RTEXT           "Availability date",IDC_STATIC,15,105,65,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_RELEASE,85,105,35,12,ES_NUMBER
+    RTEXT           "Initial status",IDC_STATIC,15,125,65,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_STATUS,85,125,35,12,ES_UPPERCASE
+    DEFPUSHBUTTON   "OK",IDOK,10,155,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,60,155,40,15
+    PUSHBUTTON      "Help",ID_HELP,110,155,40,15
+END
+
+IDD_ADD_WKC DIALOGEX 80, 50, 185, 160
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Workcenter"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    RTEXT           "Workcenter ID",IDC_STATIC,10,10,55,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_WKC_ID,70,10,95,12,ES_AUTOHSCROLL
+    RTEXT           "Comments",IDC_STATIC,10,30,55,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_WKC_NAME,70,30,95,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,10,50,165,75
+    RTEXT           "# of machines",IDC_STATIC,15,65,55,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_MCH_COUNT,75,65,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_MCH_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,175,145,8,12
+    RTEXT           "Style",IDC_LAB_STYLE,110,65,20,15,SS_CENTERIMAGE
+    CONTROL         "Edit workcenter color",IDC_STYLE,"Button",BS_OWNERDRAW | WS_TABSTOP,135,65,30,15
+    RTEXT           "Availability date",IDC_LAB_RELEASE,15,85,55,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_RELEASE,75,85,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Starting status",IDC_LAB_STATUS,15,105,55,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_STATUS,75,105,30,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "Setup Matrix",IDC_SETUP,115,95,50,15
+    DEFPUSHBUTTON   "OK",IDOK,10,135,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,65,135,45,15
+    PUSHBUTTON      "Help",ID_HELP,120,135,45,15
+END
+
+IDD_ADD_JOB DIALOG  80, 50, 230, 195
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Job"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    RTEXT           "Job ID",IDC_STATIC,25,10,45,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_JOB_ID,75,10,110,12,ES_AUTOHSCROLL
+    RTEXT           "Comments",IDC_STATIC,25,30,45,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_JOB_NAME,75,30,110,12,ES_AUTOHSCROLL
+    RTEXT           "# of jobs",IDC_LAB_COUNT,25,50,45,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_JOB_COUNT,75,50,35,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_JOB_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,116,50,8,12
+    RTEXT           "Style",IDC_LAB_STYLE,135,50,25,15,SS_CENTERIMAGE
+    CONTROL         "Edit job color",IDC_STYLE,"Button",BS_OWNERDRAW | WS_TABSTOP,165,50,30,15
+    GROUPBOX        "",IDC_STATIC,10,70,210,75
+    RTEXT           "Release date",IDC_STATIC,15,85,45,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_RELEASE,65,85,35,12,ES_NUMBER
+    RTEXT           "Due date",IDC_STATIC,15,105,45,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_DUE,65,105,35,12,ES_NUMBER
+    RTEXT           "Weight",IDC_STATIC,15,125,45,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_WEIGHT,65,125,35,12,ES_NUMBER
+    RTEXT           "Processing Time",IDC_STATIC,110,85,60,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PROCESSING,175,85,35,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Status",IDC_LAB_STATUS,145,180,25,10,SS_CENTERIMAGE | NOT WS_VISIBLE
+    EDITTEXT        IDC_STATUS,175,180,35,12,ES_UPPERCASE | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    RTEXT           "Route",IDC_LAB_ROUTE,110,105,30,10,SS_CENTERIMAGE
+    CONTROL         "Set up the complete job route",IDC_ROUTE,"Button",BS_OWNERDRAW | WS_TABSTOP,110,123,45,15
+    CONTROL         "Copy route from an existing job",IDC_LOAD,"Button",BS_OWNERDRAW | WS_TABSTOP,165,123,45,15
+    DEFPUSHBUTTON   "OK",IDOK,20,155,50,15
+    PUSHBUTTON      "Cancel",IDCANCEL,90,155,50,15
+    PUSHBUTTON      "Help",ID_HELP,160,155,50,15
+END
+
+IDD_ADD_OPER DIALOGEX 90, 0, 175, 155
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Operation"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    RTEXT           "Job ID",IDC_STATIC,25,10,35,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_JOB_ID,65,10,70,12,ES_READONLY | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    RTEXT           "# in route",IDC_STATIC,20,30,40,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_NUMBER,65,30,30,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    CONTROL         "Spin1",IDC_NUMBER_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,97,30,8,12
+    GROUPBOX        "",IDC_STATIC,10,45,155,75
+    RTEXT           "Workcenter ID",IDC_STATIC,15,60,55,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_WKC_ID,75,60,80,53,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Processing Time",IDC_STATIC,15,80,55,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PROCESSING,75,80,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Status",IDC_STATIC,15,100,55,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_STATUS,75,100,30,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,10,130,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,65,130,45,15
+    PUSHBUTTON      "Help",ID_HELP,120,130,45,15
+END
+
+IDD_STYLE DIALOG  50, 50, 215, 115
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    RTEXT           "*",IDC_LAB0,5,10,40,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_ID,50,10,95,12,ES_AUTOHSCROLL
+    RTEXT           "Time",IDC_LAB1,155,10,20,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_TIME,180,10,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Red",IDC_STATIC,10,35,20,10,SS_CENTERIMAGE
+    LTEXT           "Green",IDC_STATIC,10,50,20,10,SS_CENTERIMAGE
+    LTEXT           "Blue",IDC_STATIC,10,65,20,10,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_RGB_SLIDER0,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,35,35,70,12
+    CONTROL         "Slider1",IDC_RGB_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,35,50,70,12
+    CONTROL         "Slider1",IDC_RGB_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,35,65,70,12
+    EDITTEXT        IDC_RGB_EDIT0,110,35,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RGB_EDIT1,110,50,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RGB_EDIT2,110,65,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Sample",IDC_SAMPLE,145,35,60,40
+    DEFPUSHBUTTON   "OK",IDOK,20,90,45,15,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,85,90,45,15
+    PUSHBUTTON      "Help",ID_HELP,150,90,45,15
+END
+
+IDD_PARAMETER DIALOG  0, 0, 110, 80
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parameter"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    RTEXT           "K1",IDC_STATIC,20,10,20,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_K1,45,10,35,12,ES_AUTOHSCROLL
+    RTEXT           "K2",IDC_STATIC,20,30,20,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_K2,45,30,35,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,10,55,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,60,55,40,15
+END
+
+IDD_TITLE DIALOGEX 0, 0, 190, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 10, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         20,IDC_STERN,"Static",SS_BITMAP | SS_CENTERIMAGE,10,10,170,135,WS_EX_CLIENTEDGE
+    CTEXT           "Please increase the color depth of your screen",IDC_BLINK,10,155,170,10
+END
+
+IDD_OBJ2 DIALOGEX 90, 50, 190, 150
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Multi-Objectives"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_LAB0,10,5,115,135
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,10,29,115,1,WS_EX_STATICEDGE
+    CONTROL         "*",IDC_OBJ0,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,20,15,100,10
+    CONTROL         "*",IDC_OBJ1,"Button",BS_AUTOCHECKBOX,20,35,100,10
+    CONTROL         "*",IDC_OBJ2,"Button",BS_AUTOCHECKBOX,20,50,100,10
+    CONTROL         "*",IDC_OBJ3,"Button",BS_AUTOCHECKBOX,20,65,100,10
+    CONTROL         "*",IDC_OBJ4,"Button",BS_AUTOCHECKBOX,20,80,100,10
+    CONTROL         "*",IDC_OBJ5,"Button",BS_AUTOCHECKBOX,20,95,100,10
+    CONTROL         "*",IDC_OBJ6,"Button",BS_AUTOCHECKBOX,20,110,100,10
+    CONTROL         "*",IDC_OBJ7,"Button",BS_AUTOCHECKBOX,20,125,100,10
+    DEFPUSHBUTTON   "OK",IDOK,140,40,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,140,65,45,15
+    PUSHBUTTON      "Help",ID_HELP,140,90,45,15
+END
+
+IDD_RUN_WIN DIALOGEX 0, 0, 130, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Plug-In Algorithm running..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Interrupt",IDC_INTERRUPT,40,10,50,15
+    CTEXT           "*",IDC_TIME,40,35,50,10,WS_DISABLED,WS_EX_CLIENTEDGE
+END
+
+IDD_MANUAL DIALOGEX 0, 0, 205, 145
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Manual Entry"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Schedule ID",IDC_STATIC,10,10,45,10
+    EDITTEXT        IDC_SCH_ID,10,20,120,12,ES_AUTOHSCROLL
+    LTEXT           "Time",IDC_STATIC,140,10,20,10
+    EDITTEXT        IDC_TIME,140,20,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "sec",IDC_STATIC,175,20,20,10,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,0,40,205,1,WS_EX_STATICEDGE
+    LTEXT           "Machine",IDC_STATIC,10,50,55,10
+    COMBOBOX        IDC_MCH_ID,10,60,75,53,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<< Previous",IDC_PREV,95,55,45,15
+    PUSHBUTTON      "Next >>",IDC_NEXT,150,55,45,15
+    LTEXT           "Sequence",IDC_STATIC,10,80,60,10
+    EDITTEXT        IDC_SEQUENCE,10,90,185,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,15,120,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,80,120,45,15
+    PUSHBUTTON      "Help",ID_HELP,145,120,45,15
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,0,110,205,1,WS_EX_STATICEDGE
+END
+
+IDD_MENU DIALOG  0, 0, 205, 205
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDB_MM_SINGLE,"Button",BS_OWNERDRAW | WS_TABSTOP,20,55,25,25
+    LTEXT           "*",IDC_WKT0,50,60,30,20
+    CONTROL         "",IDB_MM_PARALLEL,"Button",BS_OWNERDRAW | WS_TABSTOP,120,55,25,25
+    LTEXT           "*",IDC_WKT1,150,60,35,20
+    CONTROL         "",IDB_MM_FLOW,"Button",BS_OWNERDRAW | WS_TABSTOP,20,90,25,25
+    LTEXT           "*",IDC_WKT2,50,100,35,10
+    CONTROL         "",IDB_MM_FLEXFLOW,"Button",BS_OWNERDRAW | WS_TABSTOP,120,90,25,25
+    LTEXT           "*",IDC_WKT3,150,96,35,18
+    CONTROL         "",IDB_MM_JOB,"Button",BS_OWNERDRAW | WS_TABSTOP,20,125,25,25
+    LTEXT           "*",IDC_WKT4,50,135,35,10
+    CONTROL         "",IDB_MM_FLEXJOB,"Button",BS_OWNERDRAW | WS_TABSTOP,120,125,25,25
+    LTEXT           "*",IDC_WKT5,150,130,35,20
+    CONTROL         "",IDB_MM_LOAD,"Button",BS_OWNERDRAW | WS_TABSTOP,20,170,25,25
+    LTEXT           "Open an existing framework",IDC_STATIC,50,175,60,20
+    CONTROL         "",IDB_MM_EXIT,"Button",BS_OWNERDRAW | WS_TABSTOP,120,170,25,25
+    LTEXT           "Exit",IDC_STATIC,150,180,30,10
+    GROUPBOX        "Create a new framework",IDC_STATIC,10,36,185,124
+END
+
+IDD_INIT DIALOG  0, 0, 160, 85
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    RTEXT           "Number of machines",IDC_LAB_MCH,10,12,80,10
+    EDITTEXT        IDC_MCH_COUNT,95,10,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_MCH_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,130,10,8,12
+    RTEXT           "Number of jobs",IDC_STATIC,10,32,80,10
+    EDITTEXT        IDC_JOB_COUNT,95,30,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_JOB_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,130,30,8,12
+    DEFPUSHBUTTON   "OK",IDOK,10,60,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,60,60,40,15
+    PUSHBUTTON      "Help",ID_HELP,110,60,40,15
+END
+
+IDD_PERFORMANCE DIALOGEX 0, 0, 175, 190
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Shop Perfomance"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "*",IDC_ID,10,5,155,150
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,10,38,155,1,WS_EX_STATICEDGE
+    RTEXT           "*",IDC_OBJ0,15,22,90,10
+    EDITTEXT        IDC_EOBJ0,110,20,45,12,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "*",IDC_OBJ1,15,47,90,10
+    EDITTEXT        IDC_EOBJ1,110,45,45,12,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "*",IDC_OBJ2,15,62,90,10
+    EDITTEXT        IDC_EOBJ2,110,60,45,12,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "*",IDC_OBJ3,15,77,90,10
+    EDITTEXT        IDC_EOBJ3,110,75,45,12,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "*",IDC_OBJ4,15,92,90,10
+    EDITTEXT        IDC_EOBJ4,110,90,45,12,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "*",IDC_OBJ5,15,107,90,10
+    EDITTEXT        IDC_EOBJ5,110,105,45,12,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "*",IDC_OBJ6,15,122,90,10
+    EDITTEXT        IDC_EOBJ6,110,120,45,12,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "*",IDC_OBJ7,15,137,90,10
+    EDITTEXT        IDC_EOBJ7,110,135,45,12,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "Close",IDCANCEL,25,165,45,15
+    PUSHBUTTON      "Help",ID_HELP,105,165,45,15
+END
+
+IDD_ABOUT DIALOG  0, 0, 230, 40
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,170,10,50,15
+    CONTROL         "Show this screen at the startup",IDC_SHOWAGAIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,45,10,120,10
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,10,20,20
+END
+
+IDD_RUN_CON DIALOGEX 0, 0, 210, 155
+STYLE DS_SETFONT | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_THICKFRAME
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Plug-In Algorithm running..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Interrupt",IDC_INTERRUPT,80,130,50,15
+    CTEXT           "*",IDC_TIME,150,130,50,10,WS_DISABLED,WS_EX_CLIENTEDGE
+    LTEXT           "Static",IDC_STATUS,10,10,190,110,0,WS_EX_CLIENTEDGE
+END
+
+IDD_OPTIONS DIALOG  0, 0, 170, 140
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "Confirmations",IDC_STATIC,10,5,150,35
+    CONTROL         "None",IDC_CONFIRM0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,20,35,10
+    CONTROL         "Crucual only",IDC_CONFIRM1,"Button",BS_AUTORADIOBUTTON,65,20,50,10
+    CONTROL         "All",IDC_CONFIRM2,"Button",BS_AUTORADIOBUTTON,125,20,25,10
+    GROUPBOX        "Font",IDC_STATIC,10,45,150,60
+    RTEXT           "Typeface",IDC_STATIC,15,62,35,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_TYPEFACE,55,62,95,65,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | CBS_SORT | CBS_HASSTRINGS | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Size",IDC_STATIC,15,82,35,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_TYPESIZE,55,82,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SIZE_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,105,82,8,12
+    DEFPUSHBUTTON   "OK",IDOK,15,115,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,65,115,40,15
+    PUSHBUTTON      "Help",ID_HELP,115,115,40,15
+END
+
+IDD_PLUGIN_MAN DIALOGEX 0, 0, 285, 280
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Plug-In Manager"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Menu Tree",IDC_STATIC,10,10,85,8
+    CONTROL         "Tree1",IDC_HEURISTICS,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_EDITLABELS | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,10,20,115,140,WS_EX_STATICEDGE
+    PUSHBUTTON      "New Folder",IDC_NEW_FOLDER,10,170,50,15
+    PUSHBUTTON      "New Plug-In",IDC_NEW_ITEM,70,170,50,15
+    PUSHBUTTON      "Copy",IDC_COPY,10,195,50,15
+    PUSHBUTTON      "Remove",IDC_REMOVE,70,195,50,15
+    PUSHBUTTON      "Import",IDC_IMPORT,10,220,50,15
+    PUSHBUTTON      "Export",IDC_EXPORT,70,220,50,15
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,0,245,135,1,WS_EX_STATICEDGE
+    CONTROL         "",IDC_FRAME,"Static",SS_ETCHEDFRAME,135,10,140,235,WS_EX_DLGMODALFRAME
+    LTEXT           "Algorithm Information",IDC_LAB0,145,20,80,10
+    EDITTEXT        IDC_DESCRIPTION,145,30,120,60,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "Objectives:",IDC_LAB1,145,95,50,10
+    LTEXT           "All",IDC_OBJECTIVES,145,105,125,10,NOT WS_VISIBLE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,138,117,135,1,WS_EX_STATICEDGE
+    CONTROL         "Run in a window",IDC_GUI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,125,100,10
+    GROUPBOX        "Time Limit",IDC_LAB2,145,140,120,65
+    LTEXT           "Time Limit of",IDC_LAB3,155,155,45,10
+    EDITTEXT        IDC_LIM_SEC,205,153,25,12,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    LTEXT           "sec",IDC_LAB4,235,155,20,10
+    CONTROL         "Prompt for Time Limit",IDC_LIM_ASK,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,155,170,100,10
+    CONTROL         "Enforce Time Limit",IDC_LIM_ENFORCE,"Button",BS_AUTOCHECKBOX,155,185,100,10
+    PUSHBUTTON      "Advanced",IDC_ALTER,150,215,40,20
+    CONTROL         "Roll back all changes",IDB_ROLLBACK,"Button",BS_OWNERDRAW | WS_TABSTOP,220,215,40,20
+    DEFPUSHBUTTON   "OK",IDOK,25,255,55,15
+    PUSHBUTTON      "Cancel",IDCANCEL,115,255,55,15
+    PUSHBUTTON      "Help",ID_HELP,205,255,55,15
+END
+
+IDD_CONFIRM DIALOG  80, 50, 240, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Confirm"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CTEXT           "*",IDC_PROMPT,35,10,195,20
+    CONTROL         "Stop requesting confirmations of this kind",IDC_CONFIRM0,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,35,145,10
+    DEFPUSHBUTTON   "Yes",IDYES,75,55,45,15
+    PUSHBUTTON      "No",IDNO,130,55,45,15
+    PUSHBUTTON      "Help",ID_HELP,185,55,45,15
+    ICON            "",IDC_LAB0,10,10,20,20
+END
+
+IDD_ROUTE DIALOG  80, 50, 230, 160
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Route"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CTEXT           "Workcenter",IDC_LAB0,10,10,85,10,SS_SUNKEN
+    CTEXT           "Pr. Tm.",IDC_LAB1,95,10,45,10,SS_SUNKEN
+    CTEXT           "Status",IDC_LAB2,140,10,25,10,SS_SUNKEN
+    CONTROL         "Move the operation up one level",IDB_UP,"Button",BS_OWNERDRAW | WS_TABSTOP,190,30,20,20
+    CONTROL         "Move the operation up one level",IDB_DOWN,"Button",BS_OWNERDRAW | WS_TABSTOP,190,55,20,20
+    CONTROL         "Insert new operation",IDB_NEW,"Button",BS_OWNERDRAW | WS_TABSTOP,190,80,20,20
+    CONTROL         "Delete operation",IDB_DEL,"Button",BS_OWNERDRAW | WS_TABSTOP,190,105,20,20
+    DEFPUSHBUTTON   "OK",IDOK,10,135,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,65,135,45,15
+    PUSHBUTTON      "Load Route",IDC_LOAD,120,135,45,15
+    PUSHBUTTON      "Help",ID_HELP,175,135,45,15
+    CTEXT           "",IDC_PROMPT,180,10,40,10,SS_SUNKEN
+END
+
+IDD_INVALIDATE DIALOG  80, 50, 175, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Invalid job"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,10,45,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,120,45,45,15
+    CTEXT           "*",IDC_PROMPT,10,10,155,25
+    PUSHBUTTON      "OK to &All",IDC_OKALL,65,45,45,15
+END
+
+IDD_LOAD_ROUTE DIALOGEX 80, 50, 195, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Load Route"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Eliminate Duplicate Routes",IDC_NO_DUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,10,105,10
+    CTEXT           "Job",IDC_LAB0,10,30,55,10,SS_SUNKEN
+    CTEXT           "Pr.Tm.",IDC_LAB1,65,30,30,10,SS_SUNKEN
+    CTEXT           "Route",IDC_LAB2,95,30,80,10,SS_SUNKEN
+    LISTBOX         IDC_ROUTE,10,40,175,95,LBS_OWNERDRAWVARIABLE | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Load",IDOK,15,145,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,75,145,45,15
+    PUSHBUTTON      "Help",ID_HELP,135,145,45,15
+    LTEXT           "",IDC_LAB3,175,30,10,10,NOT WS_VISIBLE
+END
+
+IDD_SETUP DIALOG  0, 0, 160, 85
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setup Times"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "To State",IDC_STATIC,40,30,35,10
+    LTEXT           "From\nState",IDC_STATIC,10,40,22,19
+    DEFPUSHBUTTON   "OK",IDOK,10,60,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,60,60,40,15
+    PUSHBUTTON      "Help",ID_HELP,110,60,40,15
+    RTEXT           "Dimension",IDC_STATIC,5,10,40,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_DIM,50,10,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_DIM_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,137,10,8,12
+    PUSHBUTTON      "Load",IDC_LOAD,85,10,40,15
+END
+
+IDD_LOAD_SETUP DIALOG  80, 50, 180, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Load Setup Matrix"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "Eliminate Duplicate Matrices",IDC_NO_DUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,10,110,10
+    LTEXT           "Workcenter",IDC_STATIC,10,30,75,8
+    LISTBOX         IDC_WKC_ID,10,40,110,80,LBS_OWNERDRAWVARIABLE | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Load",IDOK,130,40,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,130,65,40,15
+    PUSHBUTTON      "Help",ID_HELP,130,90,40,15
+END
+
+IDD_WORKSPACE DIALOG  0, 0, 160, 145
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Workspace"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,10,5,140,105
+    CONTROL         "*",IDC_WKT0,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,20,20,120,10
+    CONTROL         "*",IDC_WKT1,"Button",BS_AUTORADIOBUTTON,20,35,120,10
+    CONTROL         "*",IDC_WKT2,"Button",BS_AUTORADIOBUTTON,20,50,55,10
+    CONTROL         "*",IDC_WKT3,"Button",BS_AUTORADIOBUTTON,20,65,120,10
+    CONTROL         "*",IDC_WKT4,"Button",BS_AUTORADIOBUTTON,20,80,120,10
+    CONTROL         "*",IDC_WKT5,"Button",BS_AUTORADIOBUTTON,20,95,120,10
+    PUSHBUTTON      "Edit Flow Route",IDC_ROUTE,80,45,60,15
+    DEFPUSHBUTTON   "Ok",IDOK,10,120,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,60,120,40,15
+    PUSHBUTTON      "Help",ID_HELP,110,120,40,15
+END
+
+IDD_FLOW_ROUTE DIALOG  80, 50, 185, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Flow Route"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LISTBOX         IDC_ROUTE,10,10,110,85,LBS_OWNERDRAWVARIABLE | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,130,20,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,130,45,45,15
+    PUSHBUTTON      "Help",ID_HELP,130,70,45,15
+END
+
+IDD_JOB DIALOGEX 80, 50, 230, 215
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Job"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "",IDC_STATIC,10,5,210,100
+    RTEXT           "Release date",IDC_STATIC,20,20,45,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_RELEASE,70,20,35,12,ES_NUMBER
+    RTEXT           "Due date",IDC_STATIC,20,40,45,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_DUE,70,40,35,12,ES_NUMBER
+    RTEXT           "Weight",IDC_STATIC,20,60,45,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_WEIGHT,70,60,35,12,ES_NUMBER
+    RTEXT           "Style",IDC_STATIC,40,80,25,15,SS_CENTERIMAGE
+    CONTROL         "Edit job color",IDC_STYLE,"Button",BS_OWNERDRAW | WS_TABSTOP,70,80,30,15
+    RTEXT           "Started",IDC_STATIC,120,20,40,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_START,165,20,35,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    RTEXT           "Completed",IDC_STATIC,120,40,40,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_STOP,165,40,35,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    RTEXT           "Tardiness",IDC_STATIC,120,60,40,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_T,165,60,35,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    RTEXT           "wT",IDC_STATIC,120,82,40,10
+    EDITTEXT        IDC_WT,165,80,35,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CTEXT           "Machine",IDC_LAB0,10,115,65,10,SS_SUNKEN
+    CTEXT           "Setup",IDC_LAB1,75,115,35,10,SS_SUNKEN
+    CTEXT           "Start",IDC_LAB2,110,115,25,10,SS_SUNKEN
+    CTEXT           "Stop",IDC_LAB3,135,115,25,10,SS_SUNKEN
+    CTEXT           "Pr.Tm.",IDC_LAB4,160,115,25,10,SS_SUNKEN
+    CTEXT           "NA",IDC_LAB5,185,115,25,10,SS_SUNKEN
+    LISTBOX         IDC_ROUTE,10,125,210,55,LBS_OWNERDRAWVARIABLE | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Close",IDCANCEL,45,190,50,15
+    PUSHBUTTON      "Help",ID_HELP,135,190,50,15
+    LTEXT           "",IDC_LAB6,210,115,10,10,NOT WS_VISIBLE
+END
+
+IDD_CLEAR_SEQ DIALOG  0, 0, 190, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Clearing Sequences"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "*",IDC_PROMPT,10,10,170,30
+    DEFPUSHBUTTON   "Save and Proceed",IDOK,10,45,80,15
+    PUSHBUTTON      "Discard and Proceed",IDNO,100,45,80,15
+    PUSHBUTTON      "Cancel",IDCANCEL,55,70,80,15
+END
+
+IDD_SCH_CONFLICT DIALOG  0, 0, 190, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Schedule Conflict"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "A schedule with this name already exists, but it is has probably been modified and is not equal to the newly created one.  Choose an appropriate action to resolve this conflict.",IDC_PROMPT,10,10,170,35
+    DEFPUSHBUTTON   "Save new",IDOK,10,55,50,15
+    PUSHBUTTON      "Overwrite",IDNO,10,80,50,15
+    PUSHBUTTON      "Cancel",IDCANCEL,10,105,50,15
+    LTEXT           "Save the new schedule with a different name",IDC_STATIC,80,55,100,20
+    LTEXT           "Overwrite the old schedule",IDC_STATIC,80,80,100,20
+    LTEXT           "Discard the new schedule",IDC_STATIC,80,105,100,20
+END
+
+IDD_CHG_WKC_NAME DIALOG  0, 0, 190, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Renaming Workcenter"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "You are about to change the workcenter name.  Operations scheduled on it are in question now.  What would you like to do with them?  Please choose an appropriate action.",IDC_PROMPT,10,10,170,35
+    DEFPUSHBUTTON   "Move",IDOK,10,55,50,15
+    PUSHBUTTON      "Orphan",IDNO,10,80,50,15
+    PUSHBUTTON      "Cancel",IDCANCEL,10,105,50,15
+    LTEXT           "Move the operations with the workcenter.",IDC_STATIC,80,55,100,20
+    LTEXT           "Leave the operations referencing the old name.",IDC_STATIC,80,80,100,20
+    LTEXT           "Discard the name change.",IDC_STATIC,80,105,100,20
+END
+
+IDD_OPPY DIALOG  0, 0, 165, 35
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    SCROLLBAR       IDC_ROUTE_SCRL,156,0,9,35,SBS_VERT
+    COMBOBOX        IDC_WKC_ID0,5,2,70,53,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PROCESSING0,80,2,35,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_PROC_SPIN0,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,96,22,8,12
+    EDITTEXT        IDC_STATUS0,120,2,30,12,ES_UPPERCASE | ES_AUTOHSCROLL
+END
+
+IDD_OBJ1 DIALOG  90, 50, 190, 155
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Objective Function"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "",IDC_LAB0,10,5,115,120
+    CONTROL         "*",IDC_OBJ0,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,160,0,25,10
+    CONTROL         "*",IDC_OBJ1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,20,20,100,10
+    CONTROL         "*",IDC_OBJ2,"Button",BS_AUTORADIOBUTTON,20,35,100,10
+    CONTROL         "*",IDC_OBJ3,"Button",BS_AUTORADIOBUTTON,20,50,100,10
+    CONTROL         "*",IDC_OBJ4,"Button",BS_AUTORADIOBUTTON,20,65,100,10
+    CONTROL         "*",IDC_OBJ5,"Button",BS_AUTORADIOBUTTON,20,80,100,10
+    CONTROL         "*",IDC_OBJ6,"Button",BS_AUTORADIOBUTTON,20,95,100,10
+    CONTROL         "*",IDC_OBJ7,"Button",BS_AUTORADIOBUTTON,20,110,100,10
+    RTEXT           "Time Limit of",IDC_LAB3,5,135,55,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_LIM_SEC,65,135,30,12,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    LTEXT           "sec",IDC_LAB4,100,135,15,10,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",IDOK,135,40,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,135,65,45,15
+    PUSHBUTTON      "Help",ID_HELP,135,90,45,15
+END
+
+IDD_PRINT_MAN DIALOG  90, 50, 175, 170
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Print What?"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,10,5,155,130
+    CTEXT           "Documents\n to Print",IDC_STATIC,20,15,55,20
+    CONTROL         "*",IDC_WIN0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,40,80,10
+    CONTROL         "*",IDC_WIN1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,55,80,10
+    CONTROL         "*",IDC_WIN2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,70,80,10
+    CONTROL         "*",IDC_WIN3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,85,80,10
+    CONTROL         "*",IDC_WIN4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,100,80,10
+    CONTROL         "*",IDC_WIN5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,115,80,10
+    CTEXT           "Print All Schedules",IDC_STATIC,85,15,45,20
+    CONTROL         "",IDC_ALL0,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,105,40,15,10
+    CONTROL         "",IDC_ALL1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,105,55,15,10
+    CONTROL         "",IDC_ALL2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,105,70,15,10
+    CONTROL         "",IDC_ALL3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,105,85,15,10
+    CONTROL         "",IDC_ALL4,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,105,100,15,10
+    CONTROL         "",IDC_ALL5,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,105,115,15,10
+    CTEXT           "Page Setup",IDC_STATIC,130,15,30,20
+    PUSHBUTTON      ">>",IDC_PAGE_SETUP0,135,40,20,10
+    PUSHBUTTON      ">>",IDC_PAGE_SETUP1,135,55,20,10
+    PUSHBUTTON      ">>",IDC_PAGE_SETUP2,135,70,20,10
+    PUSHBUTTON      ">>",IDC_PAGE_SETUP3,135,85,20,10
+    PUSHBUTTON      ">>",IDC_PAGE_SETUP4,135,100,20,10
+    PUSHBUTTON      ">>",IDC_PAGE_SETUP5,135,115,20,10
+    DEFPUSHBUTTON   "OK",IDOK,10,145,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,65,145,45,15
+    PUSHBUTTON      "Help",ID_HELP,120,145,45,15
+END
+
+IDD_PLUGIN DIALOGEX 0, 0, 330, 266
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "Algorithm Properties"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Name",IDC_STATIC,10,10,50,10
+    EDITTEXT        IDC_NAME,10,20,115,12,ES_AUTOHSCROLL
+    LTEXT           "Description",IDC_STATIC,10,40,50,10
+    EDITTEXT        IDC_DESCRIPTION,10,50,115,55,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Simplified Data Format",IDC_SHORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,115,85,10
+    GROUPBOX        "Objectives Supported",IDC_STATIC,10,135,115,120
+    CONTROL         "*",IDC_OBJ0,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_GROUP,210,0,105,10
+    CONTROL         "*",IDC_OBJ1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,150,100,10
+    CONTROL         "*",IDC_OBJ2,"Button",BS_AUTOCHECKBOX,20,165,100,10
+    CONTROL         "*",IDC_OBJ3,"Button",BS_AUTOCHECKBOX,20,180,100,10
+    CONTROL         "*",IDC_OBJ4,"Button",BS_AUTOCHECKBOX,20,195,100,10
+    CONTROL         "*",IDC_OBJ5,"Button",BS_AUTOCHECKBOX,20,210,100,10
+    CONTROL         "*",IDC_OBJ6,"Button",BS_AUTOCHECKBOX,20,225,100,10
+    CONTROL         "*",IDC_OBJ7,"Button",BS_AUTOCHECKBOX,20,240,100,10
+    LTEXT           "Executable",IDC_STATIC,135,10,50,10
+    EDITTEXT        IDC_EXE,135,20,125,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Browse",IDC_BROWSE,270,15,40,15
+    LTEXT           "Additional Arguments",IDC_STATIC,135,40,90,10
+    EDITTEXT        IDC_ARG,135,50,90,12,ES_AUTOHSCROLL
+    GROUPBOX        "Program Type",IDC_STATIC,135,70,90,50,WS_GROUP
+    CONTROL         "Windows application",IDC_GUI,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,145,85,75,15
+    CONTROL         "Console application",IDC_CON,"Button",BS_AUTORADIOBUTTON,145,100,75,15
+    GROUPBOX        "Additional Files",IDC_FILES_BOX,235,40,85,80
+    CONTROL         "List2",IDC_FILES,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,240,50,75,40,WS_EX_CLIENTEDGE
+    CONTROL         "Add File",IDB_ADDFILE,"Button",BS_OWNERDRAW | WS_TABSTOP,250,95,20,20
+    CONTROL         "Remove File",IDB_DELFILE,"Button",BS_OWNERDRAW | WS_TABSTOP,285,95,20,20
+    GROUPBOX        "Workspaces Supported",IDC_WKT_BOX,135,130,185,80
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,135,189,185,1,WS_EX_STATICEDGE
+    CONTROL         "*",IDC_WKT0,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,145,145,70,10
+    CONTROL         "*",IDC_WKT1,"Button",BS_AUTOCHECKBOX,230,145,85,10
+    CONTROL         "*",IDC_WKT2,"Button",BS_AUTOCHECKBOX,145,160,70,10
+    CONTROL         "*",IDC_WKT3,"Button",BS_AUTOCHECKBOX,230,160,85,10
+    CONTROL         "*",IDC_WKT4,"Button",BS_AUTOCHECKBOX,145,175,70,10
+    CONTROL         "*",IDC_WKT5,"Button",BS_AUTOCHECKBOX,230,175,85,10
+    CONTROL         "Setup Times",IDC_ADV0,"Button",BS_AUTOCHECKBOX,145,195,70,10
+    CONTROL         "Copy files to LEKIN algorithms directory",IDC_COPY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,220,140,10
+    DEFPUSHBUTTON   "OK",IDOK,145,240,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,205,240,45,15
+    PUSHBUTTON      "Help",ID_HELP,265,240,45,15
+    CONTROL         "M/C Availability Dates",IDC_ADV1,"Button",BS_AUTOCHECKBOX,230,195,85,10
+END
+
+IDD_RUNNING DIALOG  0, 0, 130, 35
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Wait..."
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Interrupt",IDC_INTERRUPT,40,10,50,15
+END
+
+IDD_RUN_COMP DIALOGEX 0, 0, 130, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Wait..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Interrupt",IDC_INTERRUPT,40,30,50,15
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,10,10,110,10
+END
+
+IDD_KEY DIALOGEX 0, 0, 165, 160
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Need a Key Disk"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Your version if LEKIN requires a key disk every time you start the program.  Please insert LEKIN disk 1 in the A: drive and press OK.",IDC_STATIC,10,10,145,35
+    LTEXT           "If you can not find the key disk, just press OK.  The Demo version will start.",IDC_STATIC,10,50,145,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,0,75,164,1,WS_EX_STATICEDGE
+    CONTROL         "Continue",IDC_KEY0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,10,85,145,10
+    CONTROL         "Never show this message again",IDC_KEY1,"Button",BS_AUTORADIOBUTTON,10,100,145,10
+    CONTROL         "Permanently switch to the Demo version",IDC_KEY2,"Button",BS_AUTORADIOBUTTON,10,115,145,10
+    DEFPUSHBUTTON   "OK",IDOK,20,135,50,15
+    PUSHBUTTON      "Help",ID_HELP,95,135,50,15
+END
+
+IDD_PAGE_SETUP_EX DIALOGEX 32, 32, 290, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Page Setup"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Printer",IDC_STATIC,10,5,155,80,WS_GROUP
+    LTEXT           "&Name:",IDC_STATIC,20,20,28,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_PRINTER_NAME,50,20,105,152,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Status:",IDC_STATIC,20,35,28,10,SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,35,85,10
+    PUSHBUTTON      ">>",IDC_PRINTER_PROPERTIES,140,35,15,10
+    LTEXT           "Type:",IDC_STATIC,20,50,28,10,SS_NOPREFIX | SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_TYPE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,50,105,10
+    LTEXT           "Where:",IDC_STATIC,20,65,28,10,SS_NOPREFIX | SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_WHERE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,65,85,10
+    CONTROL         "&File",IDC_PRINTER_FILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,65,23,10
+    GROUPBOX        "Paper",IDC_STATIC,10,90,155,55,WS_GROUP
+    LTEXT           "Si&ze:",1089,20,105,28,10,SS_CENTERIMAGE
+    COMBOBOX        1137,50,105,105,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "&Source:",1090,20,125,28,10,SS_CENTERIMAGE
+    COMBOBOX        1138,50,125,105,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Margins",IDC_STATIC,10,150,155,55,WS_GROUP
+    LTEXT           "&Left:",1102,20,165,25,10,SS_CENTERIMAGE
+    EDITTEXT        1155,50,165,30,12,WS_GROUP
+    LTEXT           "&Right:",1103,95,165,30,10,SS_CENTERIMAGE
+    EDITTEXT        1157,125,165,30,12,WS_GROUP
+    LTEXT           "&Top:",1104,20,185,25,10,SS_CENTERIMAGE
+    EDITTEXT        1156,50,185,30,12,WS_GROUP
+    LTEXT           "&Bottom:",1105,95,185,30,10,SS_CENTERIMAGE
+    EDITTEXT        1158,125,185,30,12,WS_GROUP
+    CONTROL         "",1080,"Static",SS_WHITERECT | WS_GROUP,175,10,80,80
+    CONTROL         "",1081,"Static",SS_GRAYRECT | WS_GROUP,255,15,5,80
+    CONTROL         "",1082,"Static",SS_GRAYRECT | WS_GROUP,180,90,80,5
+    CONTROL         "Slider1",IDC_PRINTER_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | WS_TABSTOP,270,10,12,85,WS_EX_CLIENTEDGE
+    GROUPBOX        "&Orientation",IDC_STATIC,190,100,80,55,WS_GROUP
+    CONTROL         "Portrait",1056,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,205,115,50,15
+    CONTROL         "Landscape",1057,"Button",BS_AUTORADIOBUTTON,205,135,50,10
+    DEFPUSHBUTTON   "OK",IDOK,200,165,60,15,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,200,190,60,15
+END
+
+IDD_PRINT_EX DIALOGEX 32, 32, 310, 240
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Print"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Printer",IDC_STATIC,10,5,155,80,WS_GROUP
+    LTEXT           "&Name:",IDC_STATIC,20,20,28,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_PRINTER_NAME,50,20,105,152,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Status:",IDC_STATIC,20,35,28,10,SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,35,85,10
+    PUSHBUTTON      ">>",IDC_PRINTER_PROPERTIES,140,35,15,10
+    LTEXT           "Type:",IDC_STATIC,20,50,28,10,SS_NOPREFIX | SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_TYPE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,50,105,10
+    LTEXT           "Where:",IDC_STATIC,20,65,28,10,SS_NOPREFIX | SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_WHERE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,65,85,10
+    CONTROL         "&File",IDC_PRINTER_FILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,65,23,10
+    GROUPBOX        "Paper",IDC_STATIC,10,90,155,55,WS_GROUP
+    LTEXT           "Si&ze:",1089,20,105,28,10,SS_CENTERIMAGE
+    COMBOBOX        1137,50,105,105,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "&Source:",1090,20,125,28,10,SS_CENTERIMAGE
+    COMBOBOX        1138,50,125,105,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Margins",IDC_STATIC,10,150,155,55,WS_GROUP
+    LTEXT           "&Left:",1102,20,165,20,10,SS_CENTERIMAGE
+    EDITTEXT        1155,50,165,30,12,WS_GROUP
+    LTEXT           "&Right:",1103,90,165,30,10,SS_CENTERIMAGE
+    EDITTEXT        1157,125,165,30,12,WS_GROUP
+    LTEXT           "&Top:",1104,20,185,20,10,SS_CENTERIMAGE
+    EDITTEXT        1156,50,185,30,12,WS_GROUP
+    LTEXT           "&Bottom:",1105,90,185,30,10,SS_CENTERIMAGE
+    EDITTEXT        1158,125,185,30,12,WS_GROUP
+    CONTROL         "",1080,"Static",SS_WHITERECT | WS_GROUP,180,10,90,90
+    CONTROL         "",1081,"Static",SS_GRAYRECT | WS_GROUP,270,15,5,90
+    CONTROL         "",1082,"Static",SS_GRAYRECT | WS_GROUP,185,100,90,5
+    CONTROL         "Slider1",IDC_PRINTER_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | WS_TABSTOP,285,15,12,85,WS_EX_CLIENTEDGE
+    GROUPBOX        "&Orientation",IDC_STATIC,175,110,125,35,WS_GROUP
+    CONTROL         "Portrait",1056,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,185,125,41,10
+    CONTROL         "Landscape",1057,"Button",BS_AUTORADIOBUTTON,245,125,50,10
+    GROUPBOX        "&Pages",IDC_STATIC,175,150,125,55,WS_GROUP
+    CONTROL         "All",IDC_PRINTER_PAGE0,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,185,165,55,10
+    CONTROL         "Selection",IDC_PRINTER_PAGE1,"Button",BS_AUTORADIOBUTTON,245,165,45,10
+    CONTROL         "From",IDC_PRINTER_PAGE2,"Button",BS_AUTORADIOBUTTON,185,185,28,10
+    EDITTEXT        IDC_PRINTER_PAGE_FROM,215,185,30,12,ES_AUTOHSCROLL
+    CTEXT           "to",IDC_PRINTER_LAB0,246,185,13,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRINTER_PAGE_TO,260,185,30,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,215,60,15,WS_GROUP
+    PUSHBUTTON      "&Apply",IDC_PRINTER_APPLY,125,215,60,15
+    PUSHBUTTON      "Cancel",IDCANCEL,215,215,60,15
+END
+
+IDD_PAGE_SETUP_GANTT DIALOGEX 32, 32, 310, 235
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Page Setup"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Printer",IDC_STATIC,10,5,155,80,WS_GROUP
+    LTEXT           "&Name:",IDC_STATIC,20,20,28,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_PRINTER_NAME,50,20,105,152,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Status:",IDC_STATIC,20,35,28,10,SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,35,85,10
+    PUSHBUTTON      ">>",IDC_PRINTER_PROPERTIES,140,35,15,10
+    LTEXT           "Type:",IDC_STATIC,20,50,28,10,SS_NOPREFIX | SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_TYPE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,50,105,10
+    LTEXT           "Where:",IDC_STATIC,20,65,28,10,SS_NOPREFIX | SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_WHERE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,65,85,10
+    CONTROL         "&File",IDC_PRINTER_FILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,65,23,10
+    GROUPBOX        "Paper",IDC_STATIC,10,90,155,55,WS_GROUP
+    LTEXT           "Si&ze:",1089,20,105,28,10,SS_CENTERIMAGE
+    COMBOBOX        1137,50,105,105,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "&Source:",1090,20,125,28,10,SS_CENTERIMAGE
+    COMBOBOX        1138,50,125,105,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Margins",IDC_STATIC,10,150,155,55,WS_GROUP
+    LTEXT           "&Left:",1102,20,165,25,10,SS_CENTERIMAGE
+    EDITTEXT        1155,50,165,30,12,WS_GROUP
+    LTEXT           "&Right:",1103,95,165,30,10,SS_CENTERIMAGE
+    EDITTEXT        1157,125,165,30,12,WS_GROUP
+    LTEXT           "&Top:",1104,20,185,25,10,SS_CENTERIMAGE
+    EDITTEXT        1156,50,185,30,12,WS_GROUP
+    LTEXT           "&Bottom:",1105,95,185,30,10,SS_CENTERIMAGE
+    EDITTEXT        1158,125,185,30,12,WS_GROUP
+    CONTROL         "",1080,"Static",SS_WHITERECT | WS_GROUP,180,10,90,90
+    CONTROL         "",1081,"Static",SS_GRAYRECT | WS_GROUP,270,15,5,90
+    CONTROL         "",1082,"Static",SS_GRAYRECT | WS_GROUP,185,100,90,5
+    CONTROL         "Slider1",IDC_PRINTER_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | WS_TABSTOP,285,15,12,85,WS_EX_CLIENTEDGE
+    GROUPBOX        "&Orientation",IDC_STATIC,175,110,125,35,WS_GROUP
+    CONTROL         "Portrait",1056,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,185,125,41,10
+    CONTROL         "Landscape",1057,"Button",BS_AUTORADIOBUTTON,245,125,50,10
+    GROUPBOX        "Pages",IDC_STATIC,175,150,125,55,WS_GROUP
+    CONTROL         "Size:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,185,165,25,10
+    EDITTEXT        IDC_PAGES_X,215,165,30,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PAGES_X,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,300,0,8,14
+    CTEXT           "x",IDC_STATIC,246,165,13,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PAGES_Y,260,165,30,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PAGES_Y,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,300,20,8,14
+    CONTROL         "Do not split workcenters",IDC_NO_SPLIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,185,105,10
+    DEFPUSHBUTTON   "OK",IDOK,60,215,60,15,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,190,215,60,15
+END
+
+IDD_PRINT_GANTT DIALOGEX 32, 32, 310, 255
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Print"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Printer",IDC_STATIC,10,5,155,80,WS_GROUP
+    LTEXT           "&Name:",IDC_STATIC,20,20,28,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_PRINTER_NAME,50,20,105,152,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Status:",IDC_STATIC,20,35,28,10,SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,35,85,10
+    PUSHBUTTON      ">>",IDC_PRINTER_PROPERTIES,140,35,15,10
+    LTEXT           "Type:",IDC_STATIC,20,50,28,10,SS_NOPREFIX | SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_TYPE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,50,105,10
+    LTEXT           "Where:",IDC_STATIC,20,65,28,10,SS_NOPREFIX | SS_CENTERIMAGE
+    CONTROL         "",IDC_PRINTER_WHERE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | WS_GROUP,50,65,85,10
+    CONTROL         "&File",IDC_PRINTER_FILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,65,23,10
+    GROUPBOX        "Paper",IDC_STATIC,10,90,155,55,WS_GROUP
+    LTEXT           "Si&ze:",1089,20,105,28,10,SS_CENTERIMAGE
+    COMBOBOX        1137,50,105,105,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "&Source:",1090,20,125,28,10,SS_CENTERIMAGE
+    COMBOBOX        1138,50,125,105,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Margins",IDC_STATIC,10,150,155,55,WS_GROUP
+    LTEXT           "&Left:",1102,20,165,20,10,SS_CENTERIMAGE
+    EDITTEXT        1155,50,165,30,12,WS_GROUP
+    LTEXT           "&Right:",1103,90,165,30,10,SS_CENTERIMAGE
+    EDITTEXT        1157,125,165,30,12,WS_GROUP
+    LTEXT           "&Top:",1104,20,185,20,10,SS_CENTERIMAGE
+    EDITTEXT        1156,50,185,30,12,WS_GROUP
+    LTEXT           "&Bottom:",1105,90,185,30,10,SS_CENTERIMAGE
+    EDITTEXT        1158,125,185,30,12,WS_GROUP
+    GROUPBOX        "&Orientation",IDC_STATIC,10,210,125,35,WS_GROUP
+    CONTROL         "Portrait",1056,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,20,225,41,10
+    CONTROL         "Landscape",1057,"Button",BS_AUTORADIOBUTTON,80,225,50,10
+    CONTROL         "",1080,"Static",SS_WHITERECT | WS_GROUP,185,10,80,80
+    CONTROL         "",1081,"Static",SS_GRAYRECT | WS_GROUP,265,15,5,80
+    CONTROL         "",1082,"Static",SS_GRAYRECT | WS_GROUP,190,90,80,5
+    CONTROL         "Slider1",IDC_PRINTER_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | WS_TABSTOP,280,10,12,85,WS_EX_CLIENTEDGE
+    GROUPBOX        "&Pages",IDC_STATIC,175,100,125,105,WS_GROUP
+    CONTROL         "Size:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,185,115,25,10
+    EDITTEXT        IDC_PAGES_X,215,115,30,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PAGES_X,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,300,0,8,14
+    CTEXT           "x",IDC_STATIC,246,115,13,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PAGES_Y,260,115,30,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PAGES_Y,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,300,20,8,14
+    CONTROL         "Do not split workcenters",IDC_NO_SPLIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,135,105,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,175,155,125,1,WS_EX_STATICEDGE
+    CONTROL         "All",IDC_PRINTER_PAGE0,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,185,165,55,10
+    CONTROL         "Selection",IDC_PRINTER_PAGE1,"Button",BS_AUTORADIOBUTTON,245,165,45,10
+    CONTROL         "From",IDC_PRINTER_PAGE2,"Button",BS_AUTORADIOBUTTON,185,185,28,10
+    EDITTEXT        IDC_PRINTER_PAGE_FROM,215,185,30,12,ES_AUTOHSCROLL
+    CTEXT           "to",IDC_PRINTER_LAB0,246,185,13,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRINTER_PAGE_TO,260,185,30,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,145,225,45,15,WS_GROUP
+    PUSHBUTTON      "&Apply",IDC_PRINTER_APPLY,200,225,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,255,225,45,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_JOB TOOLBAR  15, 15
+BEGIN
+    BUTTON      ID_JOB_ADD
+    BUTTON      ID_JOB_EDIT
+    BUTTON      ID_JOB_DEL
+    SEPARATOR
+    BUTTON      ID_OPER_ADD
+    BUTTON      ID_OPER_EDIT
+    BUTTON      ID_OPER_DEL
+END
+
+IDR_GANTT TOOLBAR  15, 15
+BEGIN
+    BUTTON      ID_TOOL_OBJ
+    BUTTON      ID_TOOL_PRF
+    SEPARATOR
+    BUTTON      ID_ZOOM_LONGER
+    BUTTON      ID_ZOOM_SHORTER
+    BUTTON      ID_ZOOM_WIDER
+    BUTTON      ID_ZOOM_NARROWER
+    BUTTON      ID_ZOOM_FIT
+    SEPARATOR
+    BUTTON      ID_VIEW_GRID
+    BUTTON      ID_VIEW_JOB
+    BUTTON      ID_VIEW_LATE
+    BUTTON      ID_VIEW_STAT
+END
+
+IDR_MCH TOOLBAR  15, 15
+BEGIN
+    BUTTON      ID_WKC_ADD
+    BUTTON      ID_WKC_EDIT
+    BUTTON      ID_WKC_DEL
+    SEPARATOR
+    BUTTON      ID_MCH_ADD
+    BUTTON      ID_MCH_EDIT
+    BUTTON      ID_MCH_DEL
+END
+
+IDR_MAINFRAME TOOLBAR  15, 15
+BEGIN
+    BUTTON      ID_WKT_NEW
+    BUTTON      ID_WKT_SAVE
+    BUTTON      ID_WKT_PRINT
+    BUTTON      ID_WKT_SETTINGS
+    SEPARATOR
+    BUTTON      ID_WIN0
+    BUTTON      ID_WIN1
+    BUTTON      ID_WIN2
+    BUTTON      ID_WIN3
+    BUTTON      ID_WIN4
+    BUTTON      ID_WIN5
+    SEPARATOR
+    BUTTON      ID_WIN_SHOW0
+    BUTTON      ID_WIN_SHOW1
+    BUTTON      ID_WIN_SHOW2
+    BUTTON      ID_WIN_SHOW3
+    SEPARATOR
+    BUTTON      ID_WIN_TILE
+    BUTTON      ID_WIN_CASCADE
+    SEPARATOR
+    BUTTON      ID_HELP
+END
+
+IDR_SEQ TOOLBAR  15, 15
+BEGIN
+    BUTTON      ID_TOOL_PRF
+    BUTTON      ID_TOOL_OBJ
+END
+
+IDR_LOG TOOLBAR  15, 15
+BEGIN
+    BUTTON      ID_TOOL_OBJ
+    SEPARATOR
+    BUTTON      ID_LOG_ADD
+    BUTTON      ID_LOG_EDIT
+    BUTTON      ID_LOG_DEL
+END
+
+IDT_FILE TOOLBAR  15, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_APP
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_PRINT_DIRECT
+    BUTTON      ID_FILE_PRINT_PREVIEW
+END
+
+IDR_OBJ TOOLBAR  15, 15
+BEGIN
+    BUTTON      ID_TOOL_OBJ
+    BUTTON      ID_TOOL_PRF
+    SEPARATOR
+    BUTTON      ID_LOG_ADD
+    BUTTON      ID_LOG_EDIT
+    BUTTON      ID_LOG_DEL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDU_DRAG                CURSOR                  "Res\\Drag.cur"
+IDU_DRAG_PLUS           CURSOR                  "Res\\DragPlus.cur"
+IDU_NODROP              CURSOR                  "Res\\NoDrop.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ADD_JOB, DIALOG
+    BEGIN
+        RIGHTMARGIN, 225
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_OBJ2, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_MANUAL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_PLUGIN_MAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 280
+        VERTGUIDE, 5
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 275
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,0
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Columbia University"
+            VALUE "FileDescription", "Lekin"
+            VALUE "FileVersion", "3, 0, 0, 0"
+            VALUE "InternalName", "Lekin"
+            VALUE "LegalCopyright", "Copyright © 1998"
+            VALUE "OriginalFilename", "Asm.exe"
+            VALUE "ProductName", "Columbia University Asm"
+            VALUE "ProductVersion", "3, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "LEKIN - flexible job-shop scheduling system"
+    IDR_MCH                 "Machine Park\nMachines\nMachine Park\nMachine File (*.mch)\n.mch\nAsmMachineFileType\nAsm Machine File"
+    IDR_JOB                 "Job Pool\nJobs\nJob Pool\nJob File (*.job)\n.job\nAsmJobFileType\nAsm Job File"
+    IDR_SEQ                 "Sequence\nSeqs\nSequence\nSequence  File (*.seq)\n.seq\nAsmSeqFileType\nAsm Sequence File"
+    IDR_GANTT               "Gantt Chart\nU\n\n\n\n\n"
+    IDR_OBJ                 "Objective Chart\nU\n\n\n\n\n"
+    IDR_LOG                 "Log Book\nU\n\n\n\n\n"
+    IDR_ALG                 "U\nU\n\nAlgorithm  File (*.alg)\n.alg\nAsmAlgFileType\nAsm Algorithm File"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COPYRIGHT           "© Feldman & Pinedo, 2001"
+    IDS_CON_TITLE           "LEKIN Console #"
+    IDS_TEXTFILTER          "Text Files|*.txt|All Files|*.*||"
+    IDS_ERROR_LOADING       "File load error"
+    IDS_CONTACT_ME          "Please contact the developers of Lekin."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "LEKIN -- Scheduling system"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Clears document data\nClear data"
+    ID_FILE_OPEN            "Opens an existing document\nOpen file"
+    ID_FILE_CLOSE           "Close the active document"
+    ID_FILE_SAVE            "Saves the document\nSave file"
+    ID_FILE_SAVE_AS         "Saves the document with a new name"
+    ID_FILE_PAGE_SETUP      "Change the printing options"
+    ID_FILE_PRINT_SETUP     "Changes the printing options"
+    ID_FILE_PRINT           "Prints the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Print Preview\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright"
+    ID_APP_EXIT             "Quits the application; prompts to save documents"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for buttons, menu items, and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane"
+    ID_PREV_PANE            "Switch back to the previous window pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_CLEAR_ALL       "Erase everything"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard"
+    ID_EDIT_FIND            "Find the specified text"
+    ID_EDIT_PASTE           "Insert Clipboard contents"
+    ID_EDIT_REPEAT          "Repeat the last action"
+    ID_EDIT_REPLACE         "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL      "Select the entire document"
+    ID_EDIT_UNDO            "Undo the last action"
+    ID_EDIT_REDO            "Redo the previously undone action"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_JOB_ADD              "Adds 1 or more jobs\nNew job(s)"
+    ID_JOB_EDIT             "Edits job data and routes\nEdit job(s)"
+    ID_JOB_DEL              "Removes selected jobs\nRemove job(s)"
+    ID_OPER_ADD             "Adds an operation\nNew operation"
+    ID_OPER_EDIT            "Edits the selected operation\nEdit operation"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OPER_DEL             "Deletes selected operations\nDelete operation(s)"
+    ID_LOG_ADD              "Makes a copy of the current schedule\nCopy schedule"
+    ID_LOG_EDIT             "Edits schedule name and color\nEdit schedule"
+    ID_LOG_DEL              "Destroys the active schedule\nDelete schedule"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOL_OBJ             "Displays muti-objectives graph comparing the sequences in the log book\nSelect performance measures"
+    ID_TOOL_PRF             "Displays shop performance\nPerformance"
+    ID_TOOL_OPTIONS         "Sets up program components"
+    ID_TOOL_PLUGIN          "Sets up user-defined plug-in heuristics"
+    ID_TOOL_GENERIC         "Change all workcenter/job names to generic"
+    ID_TOOL_CONVERT         "Convert a text file into a set of LEKIN workspaces"
+    ID_ZOOM_LONGER          "Increases the display period\nLonger"
+    ID_ZOOM_SHORTER         "Decreases the display period\nShorter"
+    ID_ZOOM_WIDER           "Increases the chart width\nWider"
+    ID_ZOOM_NARROWER        "Decreases the chart width\nThinner"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ZOOM_FIT             "Resizes the Chart to fit the window\nResize to fit"
+    ID_VIEW_GRID            "Toggles grid lines on / off\nGrid lines"
+    ID_VIEW_JOB             "Toggles job names on / off\nJob names"
+    ID_VIEW_LATE            "Toggles indentation of the late jobs\nLate Jobs"
+    ID_VIEW_STAT            "Toggles status pairs on / off\nStatus pairs"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WKT_NEW              "Closes all windows and opens a new framework\nStart Over"
+    ID_WKT_SAVE             "Saves multiple documents\nSave workspace"
+    ID_WKT_SAVE_AS          "Saves all documents with new names\nSave workspace as"
+    ID_WKT_SETTINGS         "Selects Environment (Flow Shop / Job Shop, etc.)\nSelect Workspace type"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WKT_PRINT            "Prints multiple documents\nPrint all"
+    ID_FILE_APP             "Appends the active file with another one\nLoad more"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WIN_SHOW0            "Data Input configuration -- opens the Machine and Job windows\nData input"
+    ID_WIN_SHOW1            "Single Schedule configuration -- opens the Gantt Chart, Sequence, and Job windows\n1 schedule"
+    ID_WIN_SHOW2            "Multiple Schedules configuration -- opens the Gantt chart, Log book, Sequence and Job windows\nMultiple schedules"
+    ID_WIN_SHOW3            "Schedule Analysis configuration -- opens the Log Book and Objective windows\nSchedule analysis"
+    ID_WIN_CASCADE          "Arranges windows to overlap\nCascade"
+    ID_WIN_TILE             "Arranges windows as non-overlapping tiles\nTile"
+    ID_WIN0                 "Opens/Activates the Machine Park window\nMachine Park window"
+    ID_WIN1                 "Opens/Activates the Job Pool window\nJob Pool window"
+    ID_WIN2                 "Opens/Activates the Sequence window\nSequence window"
+    ID_WIN3                 "Opens/Activates the Gantt Chart window\nGantt Chart window"
+    ID_WIN4                 "Opens/Activates the Objective Chart window\nObjective Chart window"
+    ID_WIN5                 "Opens/Activates the Log Book window\nLog Book window"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RULE_MANUAL          "Enters the sequence manually"
+    ID_J_SORT_NAME          "Sort jobs by name"
+    ID_J_SORT_PROCESSING    "Sort jobs by total processing time"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_J_SORT_DUE           "Sort jobs by due date"
+    ID_J_SORT_WEIGHT        "Sort jobs by weight"
+    ID_J_SORT_RELEASE       "Sort jobs by release date"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RULE0                "Apparent Tardiness Cost with Setup\nATCS"
+    ID_RULE1                "Earliest Due Date rule\nEDD"
+    ID_RULE2                "Minimum Slack rule\nMS"
+    ID_RULE3                "First Come -- First Served\nFCFS"
+    ID_RULE4                "Longest (remaining) Processing Time rule\nLPT"
+    ID_RULE5                "Shortest (remaining) Processing Time rule\nSPT"
+    ID_RULE6                "Weighted (remaining) Shortest Processing Time rule\nWSPT"
+    ID_RULE7                "Critical ratio rule\nCR"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WKC_ADD              "Adds a workcenter\nNew workcenter(s)"
+    ID_WKC_EDIT             "Edits workcenter information\nEdit workcenter"
+    ID_WKC_DEL              "Removes selected workcenters\nRemove workcenter(s)"
+    ID_MCH_ADD              "Adds 1 or more machines\nNew machine(s)"
+    ID_MCH_EDIT             "Edits machine information\nEdit machine(s)"
+    ID_MCH_DEL              "Removes selected machines\nRemove machine(s)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_SCH_ERR1            "Operation (%1) covered more than once in schedule '%2'."
+    IDP_SCH_ERR2            "Operation (%1) not covered in schedule '%2'."
+    IDP_SCH_ERR3            "Detected cycle at operation (%1) in schedule '%2'."
+    IDP_NO_OBJ              "You have to select at least one objective."
+    IDP_NO_WKT              "You have to select at least one workspace."
+    IDP_NO_SCH              "No valid schedules were produced by the external algorithm."
+    IDP_NO_SETUP            "There are no workcenters with non-zero setup matrices.  Nothing to load."
+    IDP_NO_WIN              "Select at least one window to print."
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_BAD_COLOR           "The color is too light or too dark. Please choose a different color"
+    IDP_EMPTY_ID            "A %1 ID must be nonempty."
+    IDP_DUP_ID              "Duplicate %2 ID '%1'.  Remember that the IDs are NOT case sensitive."
+    IDP_BAD_ID              "%1 ID is invalid; press F1 for more information."
+    IDP_DUP_OPER            "Duplicate operation. Recirculation is not permitted."
+    IDP_BAD_EXE             "Invalid executable file."
+    IDP_IDENTICAL_MENU      "Identical items in the same submenu."
+    IDP_EMPTY_NAME          "Enter the algorithm name and description."
+    IDP_EMPTY_ROUTE         "You have not entered any route."
+    IDP_TOO_MANY            "Your version of LEKIN supports only %1 %2s.\nTo obtain a larger version, contact Michael Pinedo at mpinedo@stern.nyu.edu."
+    IDP_NO_ADMIN            "Lekin Installer could not finish initialization.  Reboot, log in as an administrator and run setup again.  If the problem persists, contact the developers."
+    IDP_CNF_DEL             "You are deleting %1s.  Proceed?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_CNF_DEL_WKC         "Deleting a workcenter may result in orphan operations.  Proceed?"
+    IDP_CANT_START          "Can't start %1"
+    IDP_POSITIVE            "Enter a positive integer."
+    IDP_NONNEGATIVE         "Enter a non-negative integer."
+    IDP_BETWEEN             "Enter an integer between %1 and %2."
+    IDP_DEGRADING           "You are about to downgrade your %1 environment%2.  Some information may be lost.  Proceed?"
+    IDP_BAD_STATUS          "Status must be from 'A' to 'Z'."
+    IDP_OPLESS              "Operation-less job '%1'."
+    IDP_NOT_SINGLE          "More than 1 operation in job '%1'."
+    IDP_BAD_OP              "Bad or duplicate operation in %2 '%1'."
+    IDP_BAD_SHOP            "Invalid shop name."
+    IDP_BAD_MCH             "Invalid machine."
+    IDP_BAD_SETUP           "Bad Setup Time"
+    IDP_NOT_EXIST           "%1 '%2' does not exist."
+    IDP_NOT_IN_ROUTE        "Job '%1' does not pass workcenter '%2' on its route."
+    IDP_BAD_TOKEN           "Invalid keyword in file."
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_BAD_FILENAME        "Bad filename."
+    IDP_NOT_SUP_ADV         "This algorithm does not support %1.  Run anyway?"
+    IDP_PIRATE              "You are trying to install LEKIN illegally.\nThe installation will be rolled back."
+    IDP_OVERWRITE           "File %1 exists.  Overwrite?"
+    IDP_UNINSTALL           "Uninstall LEKIN and all its components?"
+    IDP_REINSTALL           "LEKIN was not installed properly.  Please reinstall."
+    IDP_CHG_EXE             "If you make that change, the system will clear the additional file list.  Proceed?"
+    IDP_WRONG_DIR           "The additional files are required to be in the same directory with the executable file."
+    IDP_ONLY_ONE            "Only one file can be the executable."
+    IDP_CANT_COPY           "Cannot copy the files."
+    IDP_CANT_CREATE         "Cannot create a file or directory."
+    IDP_NO_EXPORT           "Nothing to export."
+    IDP_BAD_FORMAT          "Invalid file format."
+    IDP_OVERWRITE_SCH       "Overwrite schedule %1?"
+    IDP_BAD_PARAM           "Both parameters must be real numbers from 0.000001 to 99999999."
+    IDP_EXTRA_WKC           "You have selected the %1 environment, but more than 1 workcenter is present in your Machine Park.  Delete extra workcenters?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CLEAR_SEQ           "You are about to change the machine/job environment.  All sequencing data has to be cleared.  Do you wish to %1 the active sequences?"
+    IDS_BAD_ROUTE           "Job '%1' has an invalid route.  Press OK to invalidate this job."
+    IDS_READY               "Ready"
+    IDS_ERROR               "Error (exit code %1)"
+    IDS_TIMEOUT             "Timeout"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ALG_NAME0           "General SB Routine"
+    IDS_ALG_NAME1           "Shifting Bottleneck / sum(wT)"
+    IDS_ALG_NAME2           "Shifting Bottleneck / Tmax"
+    IDS_ALG_NAME3           "SB-LS (FFS decomposition)"
+    IDS_ALG_NAME4           "Local Search"
+    IDS_ALG_DESC0           "Generic Shifting Bottleneck algorithm -- by Nutthapol Asadathorn."
+    IDS_ALG_DESC1           "Shifting Bottleneck algorithm for Total Weighted Tardiness in Job Shops -- by Marcos Singer."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ALG_DESC2           "Shifting Bottleneck heuristic for Maximum Tardiness in Job Shops -- by Alkis Vazacopoulos."
+    IDS_ALG_DESC3           "Shifting Bottleneck & Local Search combination for Flexible Flow Shop -- by Ya Yang."
+    IDS_ALG_DESC4           "Local Search tool for Job Shop -- by Stephan Kreipl."
+    IDS_ALG_EXE0            "SB.exe"
+    IDS_ALG_EXE1            "SBTWT.exe"
+    IDS_ALG_EXE2            "RunASB.bat"
+    IDS_ALG_EXE3            "SBLS.exe"
+    IDS_ALG_EXE4            "LSearch.exe"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ALG_FILES2          "Lekin2A.exe;ASB.exe;A2Lekin.exe;"
+    IDS_S_SORT              "Sort schedules by %1"
+    IDS_COMPRESS            " ""%1*.*"" ""%2"" -o -h"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DECOMPRESS          " ""%2"" ""%1*.*"" -d -o -h"
+    IDS_FILE_HEADER         "LEKIN Algorithm File"
+    IDS_OBJ0                "Running Time"
+    IDS_OBJ1                "Makespan"
+    IDS_OBJ2                "max. Tardiness"
+    IDS_OBJ3                "Number of Late jobs"
+    IDS_OBJ4                "Total Flow Time"
+    IDS_OBJ5                "Total Tardiness"
+    IDS_OBJ6                "Total Weighted Flow Time"
+    IDS_OBJ7                "Total Weighted Tardiness"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_JOB                 "job"
+    IDS_WKC                 "workcenter"
+    IDS_MCH                 "machine"
+    IDS_SCH                 "schedule"
+    IDS_OPER                "operation"
+    IDS_WKC2                "workstation"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PARK0               "Ordinary Workcenters"
+    IDS_PARK1               "Flexible Workcenters"
+    IDS_ADV0                "setup times"
+    IDS_ADV1                "availability dates"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_POOL0               "Single-operation jobs"
+    IDS_POOL1               "Flow Shop"
+    IDS_POOL2               "Job Shop"
+    IDS_WKT0                "Single Machine"
+    IDS_WKT1                "Parallel Machines"
+    IDS_WKT2                "Flow Shop"
+    IDS_WKT3                "Flexible Flow Shop"
+    IDS_WKT4                "Job Shop"
+    IDS_WKT5                "Flexible Job Shop"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PLUGIN0              "Runs this algorithm"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_LOG0                 "Activates this schedule"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_EXPIRED             "Your licensed version of LEKIN has expired.  The Demo version has been installed instead."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "Res\Asm.rc2"  // non-App Studio edited resources
+
+#include "AfxRes.rc"  // Standard components
+#include "AfxPrint.rc"  // printing/print preview resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
